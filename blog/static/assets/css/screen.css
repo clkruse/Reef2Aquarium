@@ -10,15 +10,14 @@
     3.  Utilities
     4.  General
     5.  Single Post
-    6.  Author Profile
-    7.  Read More
+    6.  Tag Archive
+    7.  Read Next
     8.  Third Party Elements
     9.  Pagination
-    10. Subscribe
-    11. Footer
-    12. Media Queries (Tablet)
-    13. Media Queries (Mobile)
-    14. Animations
+    10.  Footer
+    11. Media Queries (Tablet)
+    12. Media Queries (Mobile)
+    13. Animations
 
 */
 
@@ -169,7 +168,7 @@ td, th{ padding: 0; }
     This forces browsers to download the new font file.
 */
 
-
+.rrssb-buttons{box-sizing:border-box;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;height:36px;margin:0;padding:0;width:100%}.rrssb-buttons:after{clear:both}.rrssb-buttons:after,.rrssb-buttons:before{content:' ';display:table}.rrssb-buttons li{box-sizing:border-box;float:left;height:100%;line-height:13px;list-style:none;margin:0;padding:0 2px}.rrssb-buttons li.rrssb-email a{background-color:#0a88ff}.rrssb-buttons li.rrssb-email a:hover{background-color:#006ed6}.rrssb-buttons li.rrssb-facebook a{background-color:#306199}.rrssb-buttons li.rrssb-facebook a:hover{background-color:#244872}.rrssb-buttons li.rrssb-tumblr a{background-color:#32506d}.rrssb-buttons li.rrssb-tumblr a:hover{background-color:#22364a}.rrssb-buttons li.rrssb-linkedin a{background-color:#007bb6}.rrssb-buttons li.rrssb-linkedin a:hover{background-color:#005983}.rrssb-buttons li.rrssb-twitter a{background-color:#26c4f1}.rrssb-buttons li.rrssb-twitter a:hover{background-color:#0eaad6}.rrssb-buttons li.rrssb-googleplus a{background-color:#e93f2e}.rrssb-buttons li.rrssb-googleplus a:hover{background-color:#ce2616}.rrssb-buttons li.rrssb-youtube a{background-color:#df1c31}.rrssb-buttons li.rrssb-youtube a:hover{background-color:#b21627}.rrssb-buttons li.rrssb-reddit a{background-color:#8bbbe3}.rrssb-buttons li.rrssb-reddit a:hover{background-color:#62a3d9}.rrssb-buttons li.rrssb-pinterest a{background-color:#b81621}.rrssb-buttons li.rrssb-pinterest a:hover{background-color:#8a1119}.rrssb-buttons li.rrssb-pocket a{background-color:#ed4054}.rrssb-buttons li.rrssb-pocket a:hover{background-color:#e4162d}.rrssb-buttons li.rrssb-github a{background-color:#444}.rrssb-buttons li.rrssb-github a:hover{background-color:#2b2b2b}.rrssb-buttons li.rrssb-instagram a{background-color:#125688}.rrssb-buttons li.rrssb-instagram a:hover{background-color:#0c3a5b}.rrssb-buttons li.rrssb-delicious a{background-color:#0b79e5}.rrssb-buttons li.rrssb-delicious a:hover{background-color:#095fb4}.rrssb-buttons li.rrssb-vk a{background-color:#4d71a9}.rrssb-buttons li.rrssb-vk a:hover{background-color:#3d5a86}.rrssb-buttons li.rrssb-hackernews a{background-color:#f60}.rrssb-buttons li.rrssb-hackernews a:hover{background-color:#cc5200}.rrssb-buttons li.rrssb-whatsapp a{background-color:#43d854}.rrssb-buttons li.rrssb-whatsapp a:hover{background-color:#28c039}.rrssb-buttons li.rrssb-print a{background-color:#8d98a2}.rrssb-buttons li.rrssb-print a:hover{background-color:#717f8b}.rrssb-buttons li a{background-color:#ccc;border-radius:2px;box-sizing:border-box;display:block;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-weight:700;height:100%;padding:11px 7px 12px 27px;position:relative;text-align:center;text-decoration:none;text-transform:uppercase;-webkit-transition:background-color .2s ease-in-out;transition:background-color .2s ease-in-out;width:100%}.rrssb-buttons li a .rrssb-icon{display:block;left:10px;padding-top:9px;position:absolute;top:0;width:10%}.rrssb-buttons li a .rrssb-icon svg{height:17px;width:17px}.rrssb-buttons li a .rrssb-icon svg path{fill:#fff}.rrssb-buttons li a .rrssb-text{color:#fff}.rrssb-buttons li a:active{box-shadow:inset 1px 3px 15px 0 rgba(22,0,0,.25)}.rrssb-buttons li.small a{padding:0}.rrssb-buttons li.small a .rrssb-icon{left:auto;margin:0 auto;overflow:hidden;position:relative;top:auto;width:100%}.rrssb-buttons li.small a .rrssb-text{visibility:hidden}.rrssb-buttons.large-format,.rrssb-buttons.large-format li{height:auto}.rrssb-buttons.large-format li a{-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:.2em;padding:8.5% 0 8.5% 12%}.rrssb-buttons.large-format li a .rrssb-icon{height:100%;left:7%;padding-top:0;width:12%}.rrssb-buttons.large-format li a .rrssb-icon svg{height:100%;position:absolute;top:0;width:100%}.rrssb-buttons.large-format li a .rrssb-text{-webkit-backface-visibility:hidden;backface-visibility:hidden}.rrssb-buttons.small-format{padding-top:5px}.rrssb-buttons.small-format li{height:80%;padding:0 1px}.rrssb-buttons.small-format li a .rrssb-icon{height:100%;padding-top:0}.rrssb-buttons.small-format li a .rrssb-icon svg{height:48%;position:relative;top:6px;width:80%}.rrssb-buttons.tiny-format{height:22px;position:relative}.rrssb-buttons.tiny-format li{padding-right:7px}.rrssb-buttons.tiny-format li a{background-color:transparent;padding:0}.rrssb-buttons.tiny-format li a .rrssb-icon svg{height:70%;width:100%}.rrssb-buttons.tiny-format li a:active,.rrssb-buttons.tiny-format li a:hover{background-color:transparent}.rrssb-buttons.tiny-format li.rrssb-email a .rrssb-icon svg path{fill:#0a88ff}.rrssb-buttons.tiny-format li.rrssb-email a .rrssb-icon:hover .rrssb-icon svg path{fill:#0054a3}.rrssb-buttons.tiny-format li.rrssb-facebook a .rrssb-icon svg path{fill:#306199}.rrssb-buttons.tiny-format li.rrssb-facebook a .rrssb-icon:hover .rrssb-icon svg path{fill:#18304b}.rrssb-buttons.tiny-format li.rrssb-tumblr a .rrssb-icon svg path{fill:#32506d}.rrssb-buttons.tiny-format li.rrssb-tumblr a .rrssb-icon:hover .rrssb-icon svg path{fill:#121d27}.rrssb-buttons.tiny-format li.rrssb-linkedin a .rrssb-icon svg path{fill:#007bb6}.rrssb-buttons.tiny-format li.rrssb-linkedin a .rrssb-icon:hover .rrssb-icon svg path{fill:#003650}.rrssb-buttons.tiny-format li.rrssb-twitter a .rrssb-icon svg path{fill:#26c4f1}.rrssb-buttons.tiny-format li.rrssb-twitter a .rrssb-icon:hover .rrssb-icon svg path{fill:#0b84a6}.rrssb-buttons.tiny-format li.rrssb-googleplus a .rrssb-icon svg path{fill:#e93f2e}.rrssb-buttons.tiny-format li.rrssb-googleplus a .rrssb-icon:hover .rrssb-icon svg path{fill:#a01e11}.rrssb-buttons.tiny-format li.rrssb-youtube a .rrssb-icon svg path{fill:#df1c31}.rrssb-buttons.tiny-format li.rrssb-youtube a .rrssb-icon:hover .rrssb-icon svg path{fill:#84111d}.rrssb-buttons.tiny-format li.rrssb-reddit a .rrssb-icon svg path{fill:#8bbbe3}.rrssb-buttons.tiny-format li.rrssb-reddit a .rrssb-icon:hover .rrssb-icon svg path{fill:#398bcf}.rrssb-buttons.tiny-format li.rrssb-pinterest a .rrssb-icon svg path{fill:#b81621}.rrssb-buttons.tiny-format li.rrssb-pinterest a .rrssb-icon:hover .rrssb-icon svg path{fill:#5d0b11}.rrssb-buttons.tiny-format li.rrssb-pocket a .rrssb-icon svg path{fill:#ed4054}.rrssb-buttons.tiny-format li.rrssb-pocket a .rrssb-icon:hover .rrssb-icon svg path{fill:#b61124}.rrssb-buttons.tiny-format li.rrssb-github a .rrssb-icon svg path{fill:#444}.rrssb-buttons.tiny-format li.rrssb-github a .rrssb-icon:hover .rrssb-icon svg path{fill:#111}.rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon svg path{fill:#125688}.rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon:hover .rrssb-icon svg path{fill:#061d2e}.rrssb-buttons.tiny-format li.rrssb-delicious a .rrssb-icon svg path{fill:#0b79e5}.rrssb-buttons.tiny-format li.rrssb-delicious a .rrssb-icon:hover .rrssb-icon svg path{fill:#064684}.rrssb-buttons.tiny-format li.rrssb-vk a .rrssb-icon svg path{fill:#4d71a9}.rrssb-buttons.tiny-format li.rrssb-vk a .rrssb-icon:hover .rrssb-icon svg path{fill:#2d4263}.rrssb-buttons.tiny-format li.rrssb-hackernews a .rrssb-icon svg path{fill:#f60}.rrssb-buttons.tiny-format li.rrssb-hackernews a .rrssb-icon:hover .rrssb-icon svg path{fill:#993d00}.rrssb-buttons.tiny-format li.rrssb-whatsapp a .rrssb-icon svg path{fill:#43d854}.rrssb-buttons.tiny-format li.rrssb-whatsapp a .rrssb-icon:hover .rrssb-icon svg path{fill:#1f962d}.rrssb-buttons.tiny-format li.rrssb-print a .rrssb-icon svg path{fill:#8d98a2}.rrssb-buttons.tiny-format li.rrssb-print a .rrssb-icon:hover .rrssb-icon svg path{fill:#5a656f}.rrssb-buttons li.rrssb-print a .rrssb-icon svg path:nth-child(2){fill:none}
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
@@ -216,13 +215,13 @@ h4, h5, h6 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: -2px;
     text-indent: -3px;
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 5.6rem;
     letter-spacing: -1px;
 }
 
@@ -244,7 +243,7 @@ h6 {
 }
 
 a {
-    color: #4A4A4A;
+    color: #3498db;
     transition: color 0.3s ease;
 }
 
@@ -307,7 +306,7 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0 1.75em -2.2em;
+    margin: 1.75em 0 1.75em 0em;
     padding: 0 0 0 1.75em;
     border-left: #4A4A4A 0.4em solid;
 }
@@ -502,8 +501,8 @@ button {
     text-decoration: none;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px; /* Hacks targeting Firefox. */
-    line-height: 13px; /* Hacks targeting Firefox. */
+    font-size: 11px; // Hack because Firefox sucks ass.
+    line-height: 13px; // Hack because Firefox sucks ass.
     font-weight: 300;
     text-align: center;
     letter-spacing: 1px;
@@ -547,6 +546,8 @@ button {
 .vertical {
     display: table-cell;
     vertical-align: middle;
+    z-index: 10;
+    position: relative;
 }
 
 /* Wraps the main content & footer */
@@ -579,7 +580,6 @@ body.nav-opened .site-wrapper {
     display: table;
     width: 100%;
     height: 100vh;
-    margin-bottom: 5rem;
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
@@ -612,6 +612,7 @@ body.nav-opened .nav-cover {
 }
 
 .nav {
+    font-family: "Open Sans", sans-serif!Important;
     position: fixed;
     top: 0;
     right: 0;
@@ -619,7 +620,7 @@ body.nav-opened .nav-cover {
     z-index: 5;
     width: 240px;
     opacity: 0;
-    background: #111;
+    background: #34495e;
     margin-bottom: 0;
     text-align: left;
     overflow-y: auto;
@@ -645,15 +646,21 @@ body.nav-opened .nav {
         -ms-transform: translate3D(0, 0, 0);
             transform: translate3D(0, 0, 0);
 }
-
+.nav-title-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6.6rem;
+    text-align: center;
+    padding-top: 4.5rem;
+    background-color: #2c3e50;
+}
 .nav-title {
-    position: absolute;
-    top: 45px;
-    left: 30px;
     font-size: 16px;
     font-weight: 100;
     text-transform: uppercase;
-    color: #fff;
+    color: #FFF;
 }
 
 .nav-close {
@@ -701,62 +708,44 @@ body.nav-opened .nav {
 }
 
 .nav ul {
-    padding: 90px 9% 5%;
+    padding-top: 111px;
+    padding-left: 0;
     list-style: none;
     counter-reset: item;
-}
-
-.nav li:before {
-    display: block;
-    float: right;
-    padding-right: 4%;
-    padding-left: 5px;
-    text-align: right;
-    font-size: 1.2rem;
-    vertical-align: bottom;
-    color: #B8B8B8;
-    content: counter(item, lower-roman);
-    counter-increment: item;
+    margin-bottom: 0;
 }
 .nav li {
-    margin: 0;
+    width: 100%;
+    height: 6.8rem;
+    box-sizing: border-box;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    color: #FFF;
+    text-align: center;
+    border-bottom: 1px solid #2c3e50;
 }
 .nav li a {
     text-decoration: none;
     line-height: 1.4;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     display: block;
     padding: 0.6rem 4%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-.nav li a:after {
-    display: inline-block;
-    content: " .......................................................";
-    color: rgba(255,255,255,0.2);
-    margin-left: 5px;
-}
-.nav .nav-current:before {
-    color: #fff;
-}
-.nav .nav-current a:after {
-    content: " ";
-    border-bottom: rgba(255,255,255,0.5) 1px solid;
-    width: 100%;
-    height: 1px;
+    color: #FFF;
 }
 
-.nav a:link,
-.nav a:visited {
-    color: #B8B8B8;
-}
 
 .nav li.nav-current a,
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
     color: #fff;
+}
+
+.nav-subscribe {
+    margin-bottom: 0;
 }
 
 .subscribe-button {
@@ -833,27 +822,9 @@ body.nav-opened .nav {
 /* Hide when there's no cover image or on page2+ */
 .no-cover .scroll-down,
 .no-cover.main-header:after,
-.paged .scroll-down,
-.paged .main-header:after {
+.archive-template .scroll-down,
+.archive-template .main-header:after {
     display: none
-}
-
-/* Appears in the top left corner of your home page */
-.blog-logo {
-    display: block;
-    float: left;
-    background: none !important; /* Makes sure there is never a background */
-    border: none !important; /* Makes sure there is never a border */
-}
-
-.blog-logo img {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    height: 38px;
-    padding: 1px 0 5px 0;
-    width: auto;
 }
 
 .menu-button {
@@ -875,17 +846,38 @@ body.nav-opened .nav {
     border-radius: 3px;
     transition: all 0.5s ease;
 }
-.menu-button:before {
+.home-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 38px;
+    padding: 0 15px;
+    border-style: solid;
+    border-width: 1px;
+    opacity: 1;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+.menu-button:before, .home-button:before {
     font-size: 12px;
     font-weight: bold;
     margin-right: 6px;
     position: relative;
     top: 1px;
 }
-.menu-button:hover {
+.menu-button:hover, .home-button:hover {
     background: #fff;
 }
-.menu-button:focus {
+.menu-button:focus, .home-button:focus {
     outline: 0;
 }
 
@@ -898,11 +890,6 @@ body.nav-opened .nav {
     color: #222;
 }
 
-/* When the navigation is closed and there is no cover image */
-.nav-closed .no-cover .menu-button {
-    border-color: #BFC8CD;
-    color: #9EABB3;
-}
 .nav-closed .no-cover .menu-button:hover {
     border-color: #555;
     color: #555;
@@ -911,8 +898,8 @@ body.nav-opened .nav {
 /* When the navigation is opened */
 .nav-opened .menu-button {
     padding: 0 12px;
-    background: #111;
-    border-color: #111;
+    background: #2c3e50;
+    border-color: #2c3e50;
     color: #fff;
     -webkit-transform: translate3D(94px, 0, 0);
         -ms-transform: translate3D(94px, 0, 0);
@@ -926,7 +913,7 @@ body.nav-opened .nav {
 }
 
 /* Special styles when overlaid on an image*/
-.main-nav.overlay {
+.main-nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -934,6 +921,7 @@ body.nav-opened .nav {
     height: 70px;
     border: none;
     background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
+    z-index: 20;
 }
 .no-cover .main-nav.overlay {
     background: none;
@@ -942,7 +930,7 @@ body.nav-opened .nav {
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
     margin: 10px 0 10px 0;
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: -1px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
@@ -966,11 +954,15 @@ body.nav-opened .nav {
 }
 
 .no-cover .page-title {
-    color: rgba(0,0,0,0.8);
+    color: #FFF;
 }
 
 .no-cover .page-description {
-    color: rgba(0,0,0,0.5);
+    color: #FFF;
+}
+
+.no-cover .post-bg-adjust, .no-cover-post .post-bg-adjust {
+    background-color: #3498db;
 }
 
 /* Add subtle load-in animation for content on the home page */
@@ -990,34 +982,54 @@ body.nav-opened .nav {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width: 80%;
-    max-width: 710px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    width: 100%;
+    margin: 0;
     word-wrap: break-word;
 }
 
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
+.post-bg {
+    background-color: #3498db;
+    width: 100%;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+    height: 50rem; 
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    overflow: hidden;
+    padding: 4rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.post-bg-adjust {
     position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 1;
+    transition: all .3s ease;
+}
+.post-bg .post-adjust, .post-head .post-adjust, .author-head .post-adjust {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
+    position: relative;
 }
 
-body:not(.post-template) .post-title,
-body:not(.page-template) .post-title {
-    font-size: 3.6rem;
+.post-data h2, .post-data p, .post-data a {
+    color: #FFF!important;
+}
+
+body:not(.post-template) .post-title {
+    font-size: 5.6rem;
 }
 
 .post-title a {
@@ -1040,7 +1052,7 @@ body:not(.page-template) .post-title {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
-    color: #9EABB3;
+    color: #FFF;
 }
 
 .author-thumb {
@@ -1055,9 +1067,23 @@ body:not(.page-template) .post-title {
     color: #9EABB3;
     text-decoration: none;
 }
-
+.post-meta a:nth-child(n+2), .tags-content a {
+    background-color: #3498db;
+    margin-right: .4rem;
+    padding: .8rem 1.6rem 1rem 1.6rem;
+    border-radius: .4rem;
+    text-decoration: none;
+    color: #FFF;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    position: relative;
+    font-family: "OpenSans", sans-serif;
+}
+.post-meta a:nth-child(n+2):hover,  .post-meta a:nth-child(n+2):active, .tags-content a:hover, .tags-content a:active{
+    text-decoration: none;
+}
 .post-meta a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .user-meta {
@@ -1118,47 +1144,50 @@ body:not(.page-template) .post-title {
    5. Single Post - When you click on an individual post
    ========================================================================== */
 
-.post-template .post-header,
-.page-template .post-header {
-   margin-bottom: 3.4rem;
+.post-template .post-header {
+   margin-bottom: 1.4rem;
 }
 
-.post-template .post-title,
-.page-template .post-title {
+.post-template .post-title {
     margin-bottom: 0;
+    font-size: 6rem;
 }
 
-.post-template .post-meta,
-.page-template .post-meta {
+.post-template .post-meta {
     margin: 0;
 }
 
-.post-template .post-date,
-.page-template .post-date {
+.post-template .post-date {
     padding: 0;
     margin: 0;
     border: none;
+}
+.post-template .tags-content {
+    margin-top: 1.5rem;
 }
 
 /* Stop elements, such as img wider than the post content, from
    creating horizontal scroll - slight hack due to imperfections
    with browser width % calculations and rounding */
-.post-template .content,
-.page-template .content {
+.post-template .content {
     overflow: hidden;
+    overflow: hidden;
+    width: 60%;
+    margin: 4rem auto;
 }
 
 /* Tweak the .post wrapper style */
-.post-template .post,
-.page-template .post {
+.post-template .post {
     margin-top: 0;
     border-bottom: none;
     padding-bottom: 0;
 }
 
+.post-template .post .post-content {
+    margin-top: 5rem;
+}
 /* Kill that stylish little circle that was on the border, too */
-.post-template .post:after,
-.page-template .post:after {
+.post-template .post:after {
     display: none;
 }
 
@@ -1202,7 +1231,7 @@ body:not(.page-template) .post-title {
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 6rem 0 0 0;
+    margin: 8rem 0 0 0;
     padding: 3rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
@@ -1232,13 +1261,18 @@ body:not(.page-template) .post-title {
 .author-meta a {
     color: #9EABB3;
 }
+.author-head .author-meta a {
+    color: #9EABB3!important;
+}
+
 .author-meta a:hover {
     color: #111;
 }
 
 /* Create some space to the right for the share links */
 .post-footer .author {
-    margin-right: 180px;
+    margin-top: 4rem;
+    text-align: center;
 }
 
 .post-footer h4 a {
@@ -1285,25 +1319,21 @@ body:not(.page-template) .post-title {
    ========================================================================== */
 
 .post-head.main-header {
-    height: 65vh;
     min-height: 180px;
 }
-
 .no-cover.post-head.main-header {
-    height: 85px;
+    height: 25rem;
     min-height: 0;
     margin-bottom: 0;
     background: transparent;
 }
 
 .tag-head.main-header {
-    height: 40vh;
-    min-height: 180px;
+    
 }
 
 .author-head.main-header {
-    height: 40vh;
-    min-height: 180px;
+    
 }
 
 .no-cover.author-head.main-header {
@@ -1314,24 +1344,7 @@ body:not(.page-template) .post-title {
 
 .author-profile {
     padding: 0 15px 5rem 15px;
-    border-bottom: #EBF2F6 1px solid;
     text-align: center;
-}
-
-/* Add a little circle in the middle of the border-bottom */
-.author-profile:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
 }
 
 .author-image {
@@ -1340,11 +1353,11 @@ body:not(.page-template) .post-title {
     box-sizing: border-box;
     display: block;
     position: absolute;
-    top: -40px;
+    top: -70px;
     left: 50%;
-    margin-left: -40px;
-    width: 80px;
-    height: 80px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
     overflow: hidden;
     padding: 6px;
@@ -1376,6 +1389,8 @@ body:not(.page-template) .post-title {
 
 .author-title {
     margin: 1.5rem 0 1rem;
+    font-size: 4rem;
+    color: #FFF;
 }
 
 .author-bio {
@@ -1408,7 +1423,7 @@ body:not(.page-template) .post-title {
 
 /* Turn off meta for page2+ to make room for extra
    pagination prev/next links */
-.paged .author-profile .author-meta {
+.archive-template .author-profile .author-meta {
     display: none;
 }
 
@@ -1529,14 +1544,7 @@ body:not(.page-template) .post-title {
     box-sizing: border-box;
 }
 
-/* Correctly position site-footer when next to the .read-next container */
-.read-next + .site-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-}
+
 
 /* ==========================================================================
    8. Third Party Elements - Embeds from other services
@@ -1566,20 +1574,25 @@ body:not(.page-template) .post-title {
    ========================================================================== */
 
 /* The main wrapper for our pagination links */
+.pagination-bg {
+    padding: 4rem 0;
+    background-color: #2c3e50;
+}
 .pagination {
     position: relative;
     width: 80%;
     max-width: 710px;
-    margin: 4rem auto;
+    margin: auto;
     font-family: "Open Sans", sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #FFF;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: #FFF;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -1616,33 +1629,23 @@ body:not(.page-template) .post-title {
 
 .extra-pagination {
     display: none;
-    border-bottom: #EBF2F6 1px solid;
-}
-.extra-pagination:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    background-color: #2c3e50;
+    width: 100%!important;
+    max-width: inherit!important;
+    padding: 1.4rem;
+    box-sizing: border-box;
 }
 .extra-pagination .pagination {
     width: auto;
 }
 
 /* On page2+ make all the headers smaller */
-.paged .main-header {
+.archive-template .main-header {
     max-height: 30vh;
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
-.paged .extra-pagination {
+.archive-template .extra-pagination {
     display: block;
 }
 
@@ -1711,12 +1714,12 @@ body:not(.page-template) .post-title {
 
 .site-footer {
     position: relative;
-    margin: 8rem 0 0 0;
     padding: 1rem 15px;
     font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.75em;
     color: #BBC7CC;
+    background-color: #2c3e50;
 }
 
 .site-footer a {
@@ -1729,17 +1732,12 @@ body:not(.page-template) .post-title {
     border-bottom: #bbc7cc 1px solid;
 }
 
-.poweredby {
-    display: block;
-    width: 45%;
-    float: right;
-    text-align: right;
-}
+
 
 .copyright {
     display: block;
-    width: 45%;
-    float: left;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -1752,21 +1750,23 @@ body:not(.page-template) .post-title {
     blockquote {
         margin-left: 0;
     }
-
+    .post-template .post-title {
+        font-size: 3.6rem;
+    }
     .main-header {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         height: auto;
         min-height: 240px;
-        height: 60vh;
+        height: 100vh;
         padding: 15% 0;
     }
 
     .scroll-down,
     .home-template .main-header:after { display: none; }
 
-    .paged .main-header {
+    .archive-template .main-header {
         min-height: 180px;
         padding: 10% 0;
     }
@@ -1784,13 +1784,14 @@ body:not(.page-template) .post-title {
         font-size: 1.8rem;
         line-height: 1.5em;
     }
-
+    .post-template .content {
+        width:80%;
+    }
     .post {
         font-size: 0.95em
     }
 
-    body:not(.post-template) .post-title,
-    body:not(.page-template) .post-title {
+    body:not(.post-template) .post-title {
         font-size: 3.2rem;
     }
 
@@ -1849,11 +1850,11 @@ body:not(.page-template) .post-title {
 
     .tag-head.main-header,
     .author-head.main-header {
-        height: 30vh;
+        height: 100vh;
     }
 
     .no-cover.post-head.main-header {
-        height: 55px;
+        height: 350px;
         padding: 0;
     }
 
@@ -1890,26 +1891,34 @@ body:not(.page-template) .post-title {
         border-top: rgba(0,0,100,0.06) 1px solid;
         border-left: none;
     }
-
+    .author-profile .author-image {
+        margin: 0 auto 0 auto;
+    }
+    
 }
 
 
 /* ==========================================================================
-   13. Media Queries - Smaller than 500px
+   12. Media Queries - Smaller than 500px
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
 
     .main-header {
-        margin-bottom: 15px;
-        height: 40vh;
+        height: 100vh;
+    }
+    .author-meta {
+        display:none;
+        
     }
 
     .no-cover.main-header {
         height: 30vh;
     }
-
-    .paged .main-header {
+    .post-template .content {
+        width: 90%;
+    }
+    .archive-template .main-header {
         max-height: 20vh;
         min-height: 160px;
         padding: 10% 0;
@@ -1927,19 +1936,6 @@ body:not(.page-template) .post-title {
     .blog-logo img {
         height: 30px;
     }
-
-    .menu-button {
-        padding: 0 5px;
-        border-radius: 0;
-        border-width: 0;
-        color: #2e2e2e;
-        background: transparent;
-    }
-    .menu-button:hover {
-        color: #2e2e2e;
-        border-color: transparent;
-        background: none;
-    }
     body.nav-opened .menu-button {
         background: none;
         border: transparent;
@@ -1950,16 +1946,11 @@ body:not(.page-template) .post-title {
         border-color: transparent;
         background: transparent;
     }
-
+    .post-meta a:nth-child(n+2) {
+        display:none;
+    }
     .no-cover .main-nav.overlay {
         background: none;
-    }
-    .no-cover .main-nav.overlay .menu-button {
-        border: none;
-    }
-
-    .main-nav.overlay .menu-button {
-        border-color: transparent;
     }
 
     .nav-title {
@@ -1979,30 +1970,25 @@ body:not(.page-template) .post-title {
     .inner,
     .pagination {
         width: auto;
-        margin: 2rem auto;
     }
 
     .post {
         width: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-left: 16px;
-        margin-right: 16px;
-        padding-bottom: 2rem;
         line-height: 1.65em;
     }
-
+    
+    .post-header .post-title{
+        font-size: 3rem;
+    }
     .post-date {
         display: none;
     }
 
-    .post-template .post-header,
-    .page-template .post-header {
+    .post-template .post-header {
         margin-bottom: 2rem;
     }
 
-    .post-template .post-date,
-    .page-template .post-date {
+    .post-template .post-date {
         display: inline-block;
     }
 
@@ -2058,13 +2044,11 @@ body:not(.page-template) .post-title {
         font-size: 1.8rem;
     }
 
-    body:not(.post-template) .post-title,
-    body:not(.page-template) .post-title {
+    body:not(.post-template) .post-title {
         font-size: 2.5rem;
     }
 
-    .post-template .site-footer,
-    .page-template .site-footer {
+    .post-template .site-footer {
         margin-top: 0;
     }
 
@@ -2086,7 +2070,7 @@ body:not(.page-template) .post-title {
     }
 
     .post-footer .author {
-        margin: 0 0 2rem 0;
+        margin: 1rem 0 2rem 0;
         padding: 0 0 1.6rem 0;
         border-bottom: #EBF2F6 1px dashed;
     }
@@ -2119,22 +2103,20 @@ body:not(.page-template) .post-title {
     .page-number {
         display: block;
     }
-
-    .site-footer {
-        margin-top: 3rem;
+    .pagination-bg {
+        padding: 1rem 0;
     }
-
     .author-profile {
         padding-bottom: 2rem;
     }
 
     .post-head.main-header {
-        height: 30vh;
+        height: 100vh;
     }
 
     .tag-head.main-header,
     .author-head.main-header {
-        height: 20vh;
+        height: 100vh;
     }
 
     .post-footer .author-image {
@@ -2142,14 +2124,14 @@ body:not(.page-template) .post-title {
     }
 
     .author-profile .author-image {
-        margin-top: -70px;
+        display:none;
     }
 
     .author-profile .author-meta span {
         font-size: 1.4rem;
     }
 
-    .paged .main-header .page-description {
+    .archive-template .main-header .page-description {
         display: none;
     }
 
@@ -2174,7 +2156,7 @@ body:not(.page-template) .post-title {
 
 
 /* ==========================================================================
-   14. Animations
+   13. Animations
    ========================================================================== */
 
 /* Used to fade in title/desc on the home page */
