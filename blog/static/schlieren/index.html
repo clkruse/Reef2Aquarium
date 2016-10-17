@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=0b79a0a9f9">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=f08a7f399e">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/tomorrow.min.css">
     <link rel="canonical" href="http://localhost:2368/schlieren/">
@@ -21,20 +21,24 @@
     <meta property="og:site_name" content="Projects">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Visualizing Density Differences">
-    <meta property="og:description" content="For background, I've had an interest in Schlieren photography for a while. Wikipedia can probably explain better than I can, but the fundamental premise is Snell's law--that light will bend when traveling through substances of different density. If you can set up a system to measure how the light bends,">
+    <meta property="og:description" content="Background Oriented Schlieren Growing up, I asked a lot of questions. How do planes fly? What is sound? Why do hurricanes form? Each time, the answer was differences in air pressure. This never made much sense intuitively. I couldn't see the difference in air pressure, and so I couldn't wrap">
     <meta property="og:url" content="http://localhost:2368/schlieren/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2016/10/Schlieren-3-1.jpg">
     <meta property="article:published_time" content="2016-10-16T22:40:19.000Z">
-    <meta property="article:modified_time" content="2016-10-16T23:16:31.000Z">
+    <meta property="article:modified_time" content="2016-10-17T07:58:36.000Z">
     <meta property="article:tag" content="Computational Photography">
     
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Visualizing Density Differences">
-    <meta name="twitter:description" content="For background, I've had an interest in Schlieren photography for a while. Wikipedia can probably explain better than I can, but the fundamental premise is Snell's law--that light will bend when traveling through substances of different density. If you can set up a system to measure how the light bends,">
+    <meta name="twitter:description" content="Background Oriented Schlieren Growing up, I asked a lot of questions. How do planes fly? What is sound? Why do hurricanes form? Each time, the answer was differences in air pressure. This never made much sense intuitively. I couldn't see the difference in air pressure, and so I couldn't wrap">
     <meta name="twitter:url" content="http://localhost:2368/schlieren/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2016/10/Schlieren-3-1.jpg">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Caleb Kruse">
     <meta name="twitter:label2" content="Filed under">
     <meta name="twitter:data2" content="Computational Photography">
+    <meta property="og:image:width" content="3648">
+    <meta property="og:image:height" content="3648">
     
     <script type="application/ld+json">
 {
@@ -54,9 +58,15 @@
     "headline": "Visualizing Density Differences",
     "url": "http://localhost:2368/schlieren/",
     "datePublished": "2016-10-16T22:40:19.000Z",
-    "dateModified": "2016-10-16T23:16:31.000Z",
+    "dateModified": "2016-10-17T07:58:36.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2016/10/Schlieren-3-1.jpg",
+        "width": 3648,
+        "height": 3648
+    },
     "keywords": "Computational Photography",
-    "description": "For background, I&#x27;ve had an interest in Schlieren photography for a while. Wikipedia can probably explain better than I can, but the fundamental premise is Snell&#x27;s law--that light will bend when traveling through substances of different density. If you can set up a system to measure how the light bends,",
+    "description": "Background Oriented Schlieren Growing up, I asked a lot of questions. How do planes fly? What is sound? Why do hurricanes form? Each time, the answer was differences in air pressure. This never made much sense intuitively. I couldn&#x27;t see the difference in air pressure, and so I couldn&#x27;t wrap",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368"
@@ -64,7 +74,7 @@
 }
     </script>
 
-    <script type="text/javascript" src="../shared/ghost-url.js?v=0b79a0a9f9"></script>
+    <script type="text/javascript" src="../shared/ghost-url.js?v=f08a7f399e"></script>
 <script type="text/javascript">
 ghost.init({
 	clientId: "ghost-frontend",
@@ -98,8 +108,8 @@ ghost.init({
         
 
 
-<header class="main-header post-head no-cover">
-    <nav class="main-nav  clearfix">
+<header class="main-header post-head " style="background-image: url(../content/images/2016/10/Schlieren-3-1.jpg)">
+    <nav class="main-nav overlay clearfix">
         <a class="home-button icon-arrow-left" href="../"><span class="word">Home</span></a>
             <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
     </nav>
@@ -167,8 +177,19 @@ ghost.init({
             </li>
         </ul> -->
         <section class="post-content">
-            <p>For background, I've had an interest in Schlieren photography for a while. Wikipedia can probably explain better than I can, but the fundamental premise is Snell's law--that light will bend when traveling through substances of different density. If you can set up a system to measure how the light bends, then you can infer pressure changes. Standard Schlieren imaging is clever, but requires parabolic mirrors and very precise imaging techniques. <br>
-There is a spinoff of this concept called background oriented Schlieren imaging, and it uses same fundamental principle in a whole new way. This is technique is what inspired me. Here's how it works: <br>
+            <blockquote>
+  <p>Background Oriented Schlieren</p>
+</blockquote>
+
+<p>Growing up, I asked a lot of questions. How do planes fly? What is sound? Why do hurricanes form? Each time, the answer was differences in air pressure. This never made much sense intuitively. I couldn't <em>see</em> the difference in air pressure, and so I couldn't wrap my head around it. So, I was excited when I came across <a href="https://en.wikipedia.org/wiki/Schlieren_photography">Schlieren photography</a>. This is a technique invented in 1864 that allows you to visualize these density differences.</p>
+
+<p>It works by exploiting Snell's law, which says that light will bend as it travels from one density to another. Given that pressure is directly related to density, if you can set up a system to measure how the light bends, then you can infer pressure changes. This is how Schlieren imaging works. Here's an example of an image using this technique. Here, we see differences in brightness caused by a shock wave (pressure difference) created by firing a gun. <br>
+<img src="../content/images/2016/10/schlierengun.jpg" alt="Schlieren image of a gun firing">
+Unfortunately, taking photos like this requires a complex and precisely tuned setup of large parabolic mirrors. Clearly not practical for use in the field. </p>
+
+<p><img src="../content/images/2016/10/Solar-Schlieren.jpg" alt="NASA Solar Schlieren"></p>
+
+<p>There is a spinoff of this concept called background oriented Schlieren imaging, and it uses same fundamental principle in a whole new way. This is technique is what inspired me. Here's how it works: <br>
 <img src="../content/images/2016/10/Schlieren-3.jpg" alt=""></p>
 
 <p>I first take an image of a textured background with no background disturbance. Without moving the camera or background, I take another picture with a density/pressure change (in this case a lighter). Because the light traveling from the background to the sensor is bent in the areas with a pressure change, it will appear that the background has shifted/warped in those areas. <br>
@@ -216,6 +237,12 @@ Having a linear polarizer for my camera lens, I took a picture of the same scene
 </main>
 
 <aside class="read-next">
+    <a class="read-next-story " style="background-image: url(../content/images/2016/10/Screen-Shot-2016-10-17-at-12.52.30-AM.png)" href="../leaf-fingerprinting-visualizing-microtextures/">
+        <section class="post">
+            <h2>Leaf Fingerprinting</h2>
+            <p>Visualizing Microtextures…</p>
+        </section>
+    </a>
 </aside>
 
 
@@ -225,10 +252,10 @@ Having a linear polarizer for my camera lens, I took a picture of the same scene
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=0b79a0a9f9"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=0b79a0a9f9"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=f08a7f399e"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=f08a7f399e"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
-    <script type="text/javascript" src="../assets/js/rrssb.min.js?v=0b79a0a9f9"></script>
+    <script type="text/javascript" src="../assets/js/rrssb.min.js?v=f08a7f399e"></script>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
