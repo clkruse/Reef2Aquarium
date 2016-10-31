@@ -14,13 +14,13 @@ window.onload = function() {
         legends: false,
         mobile_layout: true
     };
-    
+
     cartodb.createVis('map', 'http://clkruse.carto.com/api/v2/viz/f4537124-51f2-11e6-8b6c-0ee66e2c9693/viz.json',mapSettings)
     .done(function(vis, layers) {
-        
+
         // Returns the native map object being used (e.g. a L.Map object for Leaflet)
         var map = vis.getNativeMap
-        
+
         var seq = O.Sequential();
         O.Keys().left().then(seq.prev, seq);
         O.Keys().right().then(seq.next, seq);
@@ -29,12 +29,12 @@ window.onload = function() {
 
         var story = O.Story();
 
-        var updateUI = function(txt,date,marker) { 
+        var updateUI = function(txt,date,marker) {
             return O.Action(function() {
                 $('#milestone > p').text(txt)
                 $('#milestone > span').text(date)
                 $('#footer > #buttons > span').text(story.state()+1 + '/' + milestones.length)
-              }); 
+              });
         }
         var sql = new cartodb.SQL({ user: 'clkruse' });
         sql.execute("SELECT * FROM r2a_data ORDER BY cartodb_id")
