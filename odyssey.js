@@ -245,7 +245,7 @@ function MarkerActions(marker) {
       },
       exit: function() {
         map.removeLayer(marker);
-      },
+      }, 
       clear: function() {
         map.removeLayer(marker);
       }
@@ -442,7 +442,7 @@ var MiniProgressBar = function(el) {
 
   // append to element or to tge body
   (el || document.body).appendChild(div);
-
+  
   /**
    * returns an action that moves the percentaje bar to the specified one
    */
@@ -522,7 +522,7 @@ function getElement(el) {
         return getElement($(el));
       }
     }
-  }
+  } 
   if (el instanceof NodeList || el instanceof HTMLCollection) {
     return el[0];
   } else if (el instanceof Element) {
@@ -1030,7 +1030,7 @@ function Slide(tree, actions, prop) {
   }
 
   /*
-   * there are special propertues like pos, marker and so
+   * there are special propertues like pos, marker and so 
    * on that should become actions
    */
   function propertiesToActions() {
@@ -1597,7 +1597,7 @@ function Video(player) {
   if (typeof YT === 'undefined' || !(player instanceof YT.Player)) {
     throw new Error("player should be a YT.Player instance, see youtube API");
   }
-
+  
   var triggers = [];
 
   var i = setInterval(function() {
@@ -1637,7 +1637,7 @@ module.exports = Video
 },{}],22:[function(_dereq_,module,exports){
 /**
 # dot progress
-ui widget that controls dot progress
+ui widget that controls dot progress 
 
 ## usage
 in order to use it you need to instanciate using a container, so for example:
@@ -1673,7 +1673,7 @@ the html rendered is the following:
 ```
 
 so you can use active class to style the active one
-
+ 
  */
 
 var Core = _dereq_('../core');
@@ -1689,8 +1689,8 @@ function DotProgress(el) {
 
   function render() {
     var html = '<ul>';
-    for(var i = 0; i < count; ++i) {
-      html += '<li><a slide-index="' + i + '" href="#' + i + '"></a></li>';
+    for(var i = 0; i < count; ++i) { 
+      html += '<li><a slide-index="' + i + '" href="#' + i + '"></a></li>'; 
     }
     html += "</ul>";
     element.innerHTML = html;
