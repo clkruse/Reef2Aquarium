@@ -8,6 +8,7 @@
 	<!--<link rel="stylesheet" href="app.css">-->
 	<script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="odyssey.js" charset="UTF-8"></script>
 	<!--<script src="app.js"></script>-->
 
 </head>
@@ -16,14 +17,24 @@
 
   <div id="slides_container" style="display:block;">
     <div id="dots"></div>
-
     <div id="slides"></div>
-
+			<!--<a href="#text"><img src="https://i.vimeocdn.com/portrait/58832_300x300"</a>-->
     <ul id="navButtons">
       <li><a class="prev"></a></li>
       <li><a class="next"></a></li>
     </ul>
   </div>
+
+	<!-- Testing adding a Modal box
+	<div class="lightbox" id="text">
+    <div class="box">
+        <a class="close" href="#">X</a>
+        <p class="title">Title</p>
+        <div class="content">
+            <img src="https://i.vimeocdn.com/portrait/58832_300x300"
+        </div>
+    </div>
+</div> -->
 
   <div id="credits">
     <span class="title" id="title">Title</span>
@@ -52,7 +63,7 @@
 	</div>
 </div>-->
 
-  <script src="odyssey.js" charset="UTF-8"></script>
+
 
   <script>
     var resizePID;
@@ -183,6 +194,7 @@
         if (actions.global.vizjson && !this.cartoDBLayer) {
           if (!this.created) { // sendCode debounce < vis loader
             cdb.vis.Loader.get(actions.global.vizjson, function(vizjson) {
+							//Note! this is what loads the slides console.log(document.getElementById('slides'))
               self.map.fitBounds(vizjson.bounds);
 
               cartodb.createLayer(self.map, vizjson)
@@ -222,15 +234,14 @@
         document.title = title_ + " | " + author_ +' Odyssey.js';
 
         var sl = actions;
-
         document.getElementById('slides').innerHTML = ''
+
         this.progress.count(sl.length);
 
         // create new story
         for(var i = 0; i < sl.length; ++i) {
           var slide = sl[i];
           var tmpl = "<div class='slide' style='diplay:none'>";
-
           tmpl += slide.html();
           tmpl += "</div>";
           document.getElementById('slides').innerHTML += tmpl;
