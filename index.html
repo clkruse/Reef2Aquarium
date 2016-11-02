@@ -10,6 +10,9 @@
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="odyssey.js" charset="UTF-8"></script>
 	<!--<script src="app.js"></script>-->
+	<link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
 
 </head>
 <body>
@@ -18,23 +21,11 @@
   <div id="slides_container" style="display:block;">
     <div id="dots"></div>
     <div id="slides"></div>
-			<!--<a href="#text"><img src="https://i.vimeocdn.com/portrait/58832_300x300"</a>-->
     <ul id="navButtons">
       <li><a class="prev"></a></li>
       <li><a class="next"></a></li>
     </ul>
   </div>
-
-	<!-- Testing adding a Modal box
-	<div class="lightbox" id="text">
-    <div class="box">
-        <a class="close" href="#">X</a>
-        <p class="title">Title</p>
-        <div class="content">
-            <img src="https://i.vimeocdn.com/portrait/58832_300x300"
-        </div>
-    </div>
-</div> -->
 
   <div id="credits">
     <span class="title" id="title">Title</span>
@@ -264,6 +255,12 @@
             actions
           )
         }
+				// attempting to add css class to images
+				//$("img").wrap($("<a>").attr("id", "#fancybox"))
+				var imageTitle = $("#slides_container img").attr('src')
+				$("#slides_container img").wrap($("<a>").attr('id', 'fancybox').attr("href", imageTitle)).addClass("fancybox")
+
+				console.log("added class")
 
         this.story.go(this.seq.current());
       },
@@ -273,6 +270,14 @@
       }
     });
   </script>
+
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+	$("#fancybox").fancybox();
+	});
+	</script>
+
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -304,6 +309,8 @@
 
 The blue tang is one of the most popular fish in the aquarium trade. As the star species in the film _Finding Dory_, these fish are in greater demand than ever. Unfortunately, the blue tang cannot be captively bred. This creates a global supply chain that connects fishermen in small Pacific islands with hobby aquarists on the other side of the world.
 ![test image](https://www.propeller.la/files/pac_02755.jpg "Blue Tang")
+
+
 
 #Blue Tang Fishing Location
 
