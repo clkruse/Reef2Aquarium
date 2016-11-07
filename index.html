@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>R2A Odyssey Test</title>
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 	<link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
 	<link rel="stylesheet" href="slides.css">
 	<!--<link rel="stylesheet" href="app.css">-->
@@ -16,24 +16,24 @@
 
 </head>
 <body>
-  <div id="map" style="width: 100%; height: 100%;"></div>
+	<div id="map" style="width: 100%; height: 100%;"></div>
 
-  <div id="slides_container" style="display:block;">
-    <div id="dots"></div>
-    <div id="slides"></div>
-    <ul id="navButtons">
-      <li><a class="prev"></a></li>
-      <li><a class="next"></a></li>
-    </ul>
-  </div>
+	<div id="slides_container" style="display:block;">
+		<div id="dots"></div>
+		<div id="slides"></div>
+		<ul id="navButtons">
+			<li><a class="prev"></a></li>
+			<li><a class="next"></a></li>
+		</ul>
+	</div>
 
-  <div id="credits">
-    <span class="title" id="title">Title</span>
-    <span class="author"><strong id="author">By Name</strong>
+	<div id="credits">
+		<span class="title" id="title">Title</span>
+		<span class="author"><strong id="author">By Name</strong>
 			<!-- Old Credits
 			<span class="author"><strong id="author">By Name using</strong> <a href="http://cartodb.github.io/odyssey.js/">Odyssey.js</a><span>
 			-->
-  </span></span></div>
+	</span></span></div>
 	<ul id="navButtons">
 		<li><a class="prev"></a></li>
 		<li><a class="next"></a></li>
@@ -58,206 +58,227 @@
 </div>-->
 
 
+<script type="infowindow/html" id="infowindow_template">
+			<div class="cartodb-popup header orange v2">
+				<a href="#close" class="cartodb-popup-close-button close">x</a>
+				<div class="cartodb-popup-header">
+					<h1>{{sp_user}}</h1>
+					<span class="separator"></span>
+				</div>
+				<div class="cartodb-popup-content-wrapper">
+							<div class="cartodb-popup-content">
+						<h4>uri</h4>
+						<p><a href="{{uri}}">{{uri}}</a></p>
+						<h4>url</h4>
+						<p><a href="{{url}}">{{url}}</a></p>
+					</div>
 
-  <script>
-    var resizePID;
+					<p style="text-align:right;font-size:small;">Custom infowindow</p>
+				</div>
+				<div class="cartodb-popup-tip-container">
+				</div>
+			</div>
+	</script>
 
-    function clearResize() {
-      clearTimeout(resizePID);
-      resizePID = setTimeout(function() { adjustSlides(); }, 100);
-    }
+	<script>
+		var resizePID;
 
-    if (!window.addEventListener) {
-      window.attachEvent("resize", function load(event) {
-        clearResize();
-      });
-    } else {
-      window.addEventListener("resize", function load(event) {
-        clearResize();
-      });
-    }
+		function clearResize() {
+			clearTimeout(resizePID);
+			resizePID = setTimeout(function() { adjustSlides(); }, 100);
+		}
 
-    function adjustSlides() {
-      var container = document.getElementById("slides_container"),
-          slide = document.querySelectorAll('.selected_slide')[0];
+		if (!window.addEventListener) {
+			window.attachEvent("resize", function load(event) {
+				clearResize();
+			});
+		} else {
+			window.addEventListener("resize", function load(event) {
+				clearResize();
+			});
+		}
 
-      if (slide) {
-        if (slide.offsetHeight+169+40+80 >= window.innerHeight) {
-          container.style.bottom = "80px";
+		function adjustSlides() {
+			var container = document.getElementById("slides_container"),
+					slide = document.querySelectorAll('.selected_slide')[0];
 
-          var h = container.offsetHeight;
+			if (slide) {
+				if (slide.offsetHeight+169+40+80 >= window.innerHeight) {
+					container.style.bottom = "80px";
 
-          slide.style.height = h-169+"px";
-          slide.classList.add("scrolled");
-        } else {
-          container.style.bottom = "auto";
-          container.style.minHeight = "0";
+					var h = container.offsetHeight;
 
-          slide.style.height = "auto";
-          slide.classList.remove("scrolled");
-        }
-      }
-    }
+					slide.style.height = h-169+"px";
+					slide.classList.add("scrolled");
+				} else {
+					container.style.bottom = "auto";
+					container.style.minHeight = "0";
 
-    var resizeAction = O.Action(function() {
-      function imageLoaded() {
-        counter--;
+					slide.style.height = "auto";
+					slide.classList.remove("scrolled");
+				}
+			}
+		}
 
-        if (counter === 0) {
-          adjustSlides();
-        }
-      }
-      var images = $('img');
-      var counter = images.length;
+		var resizeAction = O.Action(function() {
+			function imageLoaded() {
+				counter--;
 
-      images.each(function() {
-        if (this.complete) {
-          imageLoaded.call( this );
-        } else {
-          $(this).one('load', imageLoaded);
-        }
-      });
-    });
+				if (counter === 0) {
+					adjustSlides();
+				}
+			}
+			var images = $('img');
+			var counter = images.length;
 
-    function click(el) {
-      var element = O.Core.getElement(el);
-      var t = O.Trigger();
+			images.each(function() {
+				if (this.complete) {
+					imageLoaded.call( this );
+				} else {
+					$(this).one('load', imageLoaded);
+				}
+			});
+		});
 
-      // TODO: clean properly
-      function click() {
-        t.trigger();
-      }
+		function click(el) {
+			var element = O.Core.getElement(el);
+			var t = O.Trigger();
 
-      if (element) element.onclick = click;
+			// TODO: clean properly
+			function click() {
+				t.trigger();
+			}
 
-      return t;
-    }
+			if (element) element.onclick = click;
 
-    O.Template({
-      init: function() {
-        var seq = O.Triggers.Sequential();
+			return t;
+		}
 
-        var baseurl = this.baseurl = 'http://{s}.api.cartocdn.com/base-dark/{z}/{x}/{y}.png';
-        var map = this.map = L.map('map').setView([0, 0.0], 4);
-        var basemap = this.basemap = L.tileLayer(baseurl, {
-          attribution: 'data OSM - map CartoDB'
-        }).addTo(map);
+		O.Template({
+			init: function() {
+				var seq = O.Triggers.Sequential();
 
-        // enable keys to move
-        O.Keys().left().then(seq.prev, seq)
-        O.Keys().right().then(seq.next, seq)
+				var baseurl = this.baseurl = 'http://{s}.api.cartocdn.com/base-dark/{z}/{x}/{y}.png';
+				var map = this.map = L.map('map').setView([0, 0.0], 4);
+				var basemap = this.basemap = L.tileLayer(baseurl, {
+					attribution: 'data OSM - map CartoDB'
+				}).addTo(map);
 
-        // attempting to enable touch swipes
-        if ("ontouchstart" in document.documentElement) {
-          O.Gestures().swipeLeft().then(seq.prev, seq)
-          O.Gestures().swipeRight().then(seq.next, seq)
-        }
+				// enable keys to move
+				O.Keys().left().then(seq.prev, seq)
+				O.Keys().right().then(seq.next, seq)
 
-        click(document.querySelectorAll('.next')).then(seq.next, seq)
-        click(document.querySelectorAll('.prev')).then(seq.prev, seq)
+				// attempting to enable touch swipes
+				if ("ontouchstart" in document.documentElement) {
+					O.Gestures().swipeLeft().then(seq.prev, seq)
+					O.Gestures().swipeRight().then(seq.next, seq)
+				}
 
-        var slides = O.Actions.Slides('slides');
-        var story = O.Story()
+				click(document.querySelectorAll('.next')).then(seq.next, seq)
+				click(document.querySelectorAll('.prev')).then(seq.prev, seq)
 
-        this.story = story;
-        this.seq = seq;
-        this.slides = slides;
-        this.progress = O.UI.DotProgress('dots').count(0);
-      },
+				var slides = O.Actions.Slides('slides');
+				var story = O.Story()
 
-      update: function(actions) {
-        var self = this;
+				this.story = story;
+				this.seq = seq;
+				this.slides = slides;
+				this.progress = O.UI.DotProgress('dots').count(0);
+			},
 
-        if (!actions.length) return;
+			update: function(actions) {
+				var self = this;
 
-        this.story.clear();
+				if (!actions.length) return;
 
-        if (this.baseurl && (this.baseurl !== actions.global.baseurl)) {
-          this.baseurl = actions.global.baseurl || 'http://0.api.cartocdn.com/base-dark/{z}/{x}/{y}.png';
+				this.story.clear();
 
-          this.basemap.setUrl(this.baseurl);
-        }
+				if (this.baseurl && (this.baseurl !== actions.global.baseurl)) {
+					this.baseurl = actions.global.baseurl || 'http://0.api.cartocdn.com/base-dark/{z}/{x}/{y}.png';
 
-        if (this.cartoDBLayer && ("http://"+self.cartoDBLayer.options.user_name+".cartodb.com/api/v2/viz/"+self.cartoDBLayer.options.layer_definition.stat_tag+"/viz.json" !== actions.global.vizjson)) {
-          this.map.removeLayer(this.cartoDBLayer);
+					this.basemap.setUrl(this.baseurl);
+				}
 
-          this.cartoDBLayer = null;
-          this.created = false;
-        }
+				if (this.cartoDBLayer && ("http://"+self.cartoDBLayer.options.user_name+".cartodb.com/api/v2/viz/"+self.cartoDBLayer.options.layer_definition.stat_tag+"/viz.json" !== actions.global.vizjson)) {
+					this.map.removeLayer(this.cartoDBLayer);
 
-        if (actions.global.vizjson && !this.cartoDBLayer) {
-          if (!this.created) { // sendCode debounce < vis loader
-            cdb.vis.Loader.get(actions.global.vizjson, function(vizjson) {
+					this.cartoDBLayer = null;
+					this.created = false;
+				}
+
+				if (actions.global.vizjson && !this.cartoDBLayer) {
+					if (!this.created) { // sendCode debounce < vis loader
+						cdb.vis.Loader.get(actions.global.vizjson, function(vizjson) {
 							//Note! this is what loads the slides console.log(document.getElementById('slides'))
-              self.map.fitBounds(vizjson.bounds);
+							self.map.fitBounds(vizjson.bounds);
 
-              cartodb.createLayer(self.map, vizjson)
-                .done(function(layer) {
-                  self.cartoDBLayer = layer;
+							cartodb.createLayer(self.map, vizjson)
+								.done(function(layer) {
+									self.cartoDBLayer = layer;
 
-                  var sublayer = layer.getSubLayer(0),
-                      layer_name = layer.layers[0].options.layer_name,
-                      filter = actions.global.cartodb_filter ? " WHERE "+actions.global.cartodb_filter : "";
+									var sublayer = layer.getSubLayer(0),
+											layer_name = layer.layers[0].options.layer_name,
+											filter = actions.global.cartodb_filter ? " WHERE "+actions.global.cartodb_filter : "";
 
-                  sublayer.setSQL("SELECT * FROM "+layer_name+filter)
+									sublayer.setSQL("SELECT * FROM "+layer_name+filter)
 
-                  self.map.addLayer(layer);
+									self.map.addLayer(layer);
 
-                  self._resetActions(actions);
-                }).on('error', function(err) {
-                  console.log("some error occurred: " + err);
-                });
-            });
+									self._resetActions(actions);
+								}).on('error', function(err) {
+									console.log("some error occurred: " + err);
+								});
+						});
 
-            this.created = true;
-          }
+						this.created = true;
+					}
 
-          return;
-        }
+					return;
+				}
 
-        this._resetActions(actions);
-      },
+				this._resetActions(actions);
+			},
 
-      _resetActions: function(actions) {
-        // update footer title and author
-        var title_ = actions.global.title === undefined ? '' : actions.global.title,
-            author_ = actions.global.author === undefined ? 'Using' : 'By '+actions.global.author;
+			_resetActions: function(actions) {
+				// update footer title and author
+				var title_ = actions.global.title === undefined ? '' : actions.global.title,
+						author_ = actions.global.author === undefined ? 'Using' : 'By '+actions.global.author;
 
-        document.getElementById('title').innerHTML = title_;
-        document.getElementById('author').innerHTML = author_;
-        document.title = title_ + " | " + author_ +' Odyssey.js';
+				document.getElementById('title').innerHTML = title_;
+				document.getElementById('author').innerHTML = author_;
+				document.title = title_ + " | " + author_ +' Odyssey.js';
 
-        var sl = actions;
-        document.getElementById('slides').innerHTML = ''
+				var sl = actions;
+				document.getElementById('slides').innerHTML = ''
 
-        this.progress.count(sl.length);
+				this.progress.count(sl.length);
 
-        // create new story
-        for(var i = 0; i < sl.length; ++i) {
-          var slide = sl[i];
-          var tmpl = "<div class='slide' style='diplay:none'>";
-          tmpl += slide.html();
-          tmpl += "</div>";
-          document.getElementById('slides').innerHTML += tmpl;
+				// create new story
+				for(var i = 0; i < sl.length; ++i) {
+					var slide = sl[i];
+					var tmpl = "<div class='slide' style='diplay:none'>";
+					tmpl += slide.html();
+					tmpl += "</div>";
+					document.getElementById('slides').innerHTML += tmpl;
 
-          this.progress.step(i).then(this.seq.step(i), this.seq)
+					this.progress.step(i).then(this.seq.step(i), this.seq)
 
-          var actions = O.Parallel(
-            this.slides.activate(i),
-            slide(this),
-            this.progress.activate(i),
-            resizeAction
-          );
+					var actions = O.Parallel(
+						this.slides.activate(i),
+						slide(this),
+						this.progress.activate(i),
+						resizeAction
+					);
 
-          actions.on("finish.app", function() {
-            adjustSlides();
-          });
+					actions.on("finish.app", function() {
+						adjustSlides();
+					});
 
-          this.story.addState(
-            this.seq.step(i),
-            actions
-          )
-        }
+					this.story.addState(
+						this.seq.step(i),
+						actions
+					)
+				}
 				// attempting to add css class to images
 				//$("img").wrap($("<a>").attr("id", "#fancybox"))
 				var imageTitle = $("#slides_container img").attr('src')
@@ -265,34 +286,34 @@
 
 				console.log("added class")
 
-        this.story.go(this.seq.current());
-      },
+				this.story.go(this.seq.current());
+			},
 
-      changeSlide: function(n) {
-        this.seq.current(n);
-      }
-    });
-  </script>
-
-
-	<script type="text/javascript">
-	$(document).ready(function() {
-	$("#fancybox").fancybox();
-	});
+			changeSlide: function(n) {
+				this.seq.current(n);
+			}
+		});
 	</script>
 
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#fancybox").fancybox();
+		});
+	</script>
 
-    ga('create', 'UA-20934186-21', 'cartodb.github.io');
-    ga('send', 'pageview');
-  </script>
 
-  <script type="text/javascript" src="http://fast.fonts.net/jsapi/3af16084-ba56-49ca-b37d-0b49b59e1927.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-20934186-21', 'cartodb.github.io');
+		ga('send', 'pageview');
+	</script>
+
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/3af16084-ba56-49ca-b37d-0b49b59e1927.js"></script>
 
 <script id="md_template" type="text/template">```
 -baseurl: "https://4.maps.nlp.nokia.com/maptile/2.1/maptile/newest/satellite.day/{z}/{x}/{y}/256/jpg?lg=eng&token=A7tBPacePg9Mj_zghvKt9Q&app_id=KuYppsdXZznpffJsKT24"
