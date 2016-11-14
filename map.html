@@ -5,6 +5,20 @@
 		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 	<link rel="stylesheet" href="cartodb.css" />
 	<link rel="stylesheet" href="slides.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<!--<![endif]-->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<!--[if lte IE 8]>
+			<link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+			<link rel="stylesheet" href="homepage.css">
+	<!--<![endif]-->
 	<!--<link rel="stylesheet" href="app.css">-->
 	<script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -16,6 +30,17 @@
 
 </head>
 <body>
+	<div class="header">
+			<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+					<a class="pure-menu-heading" href="">REEF to AQUARIUM</a>
+
+					<ul class="pure-menu-list">
+							<li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
+							<li class="pure-menu-item"><a href="about.html" class="pure-menu-link">The Team</a></li>
+							<li class="pure-menu-item"><a href="#" class="pure-menu-link">All Stories</a></li>
+					</ul>
+			</div>
+	</div>
 	<div id="map" style="width: 100%; height: 100%;"></div>
 
 	<div id="slides_container" style="display:block;">
