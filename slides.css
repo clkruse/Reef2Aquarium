@@ -122,7 +122,8 @@ body {
 #slides_container h6 {
     font-family: 'Proxima N W01 Bold', Sans-serif;
     color: #333;
-    font-size: 45px
+    font-size: 45px;
+    line-height: 1em
 }
 #slides_container h1:after,
 #slides_container h2:after,

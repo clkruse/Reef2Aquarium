@@ -198,8 +198,8 @@
 
 				// attempting to enable touch swipes
 				if ("ontouchstart" in document.documentElement) {
-					O.Gestures().swipeLeft().then(seq.prev, seq)
-					O.Gestures().swipeRight().then(seq.next, seq)
+					O.Gestures().swipeRight().then(seq.prev, seq)
+					O.Gestures().swipeLeft().then(seq.next, seq)
 				}
 
 				click(document.querySelectorAll('.next')).then(seq.next, seq)
