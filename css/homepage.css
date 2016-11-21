@@ -142,7 +142,7 @@ a.pure-button-primary {
     background: linear-gradient(
       rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.35)
-      ), url("images/IMG_3681.jpg");
+      ), url("../img/IMG_3681.jpg");
     background-size: cover;
     background-position: center center;
     z-index: 1;
