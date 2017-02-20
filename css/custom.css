@@ -1,1 +1,15 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.nyt-header {
+  /*border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3); */
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.text-shadow {
+  /*padding-left: .8%;
+  padding-right: .8%;
+  background: rgba(0,0,0,0.3); */
+
+  text-shadow: 0 0 2.5px rgba(0,0,0,1);
+}
