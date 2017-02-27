@@ -13,3 +13,12 @@
 
   text-shadow: 0 0 2.5px rgba(0,0,0,1);
 }
+
+.image-slider.height-40 .slides li {
+  height: 40vh;
+
+}
+
+.list-inline a {
+  color: #505050;
+}

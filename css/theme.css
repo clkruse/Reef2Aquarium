@@ -581,7 +581,7 @@ footer {
   overflow: hidden;
 }
 footer {
-  padding: 72px 0;
+  padding: 24px 0;
 }
 .fullscreen {
   height: 100vh;
@@ -741,9 +741,9 @@ footer.bg-dark li,
   border-radius: 0;
   color: #47b475;
   text-align: center;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
   margin-right: 8px;
   margin-bottom: 24px;
 }
@@ -875,6 +875,7 @@ nav ul {
   display: inline-block;
   padding: 0 32px;
 }
+
 .module-group {
   display: inline-block;
 }
