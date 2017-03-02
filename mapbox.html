@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
+        <link href="css/font-raleway.css" rel="stylesheet" type="text/css">
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+        <style>
+            body { margin:0; padding:0; }
+            #map { position:absolute; top:0; bottom:0; width:100%; }
+        </style>
+    </head>
+
+    <body>
+
+    <!-- Navbar -->
+		<div class="">
+		    <nav>
+		        <div class="nav-bar">
+		            <div class="module widget-handle left">
+                  <ul class="menu">
+                      <li>
+                          <a href="index.html">Reef to Aquarium</a>
+                      </li>
+		                <!-- Optional Logo image in top left corner
+                    <a href="index.html">
+		                    <img class="logo logo-light" alt="Foundry" src="img/logo-light.png">
+		                    <img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png">
+		                </a>
+                    -->
+		            </div>
+		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+		                <i class="ti-menu"></i>
+		            </div>
+		            <div class="module-group right">
+		                <div class="module left">
+		                    <ul class="menu">
+		                        <li>
+		                            <a href="about.html">The Team</a>
+		                        </li>
+
+		                        <li class="has-dropdown">
+		                            <a href="stories.html">
+		                                Stories
+		                            </a>
+		                            <ul>
+		                                <li>
+                                      <a href="mr-su.html">Mr. Su</a>
+                                      <a href="#"><strike>Exporter</strike></a>
+                                      <a href="fishing.html">Fishing</a>
+                                      <a href="#"><strike>Philippines</strike></a>
+                                      <a href="#"><strike>Colorado Aquarists</strike></a>
+		                                </li>
+		                            </ul>
+		                        </li>
+		                    </ul>
+		                </div>
+		                <div class="module widget-handle left">
+                      <ul class="menu">
+                          <li>
+                              <a href="map.html">The Map</a>
+                          </li>
+
+		                  </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </nav>
+		</div>
+
+    <div class="main-container">
+      <section class=" fullscreen">
+        <div id='map'></div>
+      </section>
+
+    </div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        zoom: 2.3,
+        center: [171.09, 20.3405],
+        style: 'mapbox://styles/clkruse/civgwpnx6002l2jotlpwnve9k',
+        hash: false
+    });
+    </script>
+<script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/flexslider.min.js"></script>
+      <script src="js/masonry.min.js"></script>
+      <script src="js/parallax.js"></script>
+      <script src="js/scripts.js"></script>
+      <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-3737359-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+</body>
+</html>
