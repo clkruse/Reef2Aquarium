@@ -25,8 +25,21 @@
 
     <body>
     <style>
-
-        /*#map { position:absolute; top:0; bottom:0; width:100%; }*/
+    @media all and (max-width: 480px) {
+        #map {
+            position: fixed;
+            height:50%;
+        }
+        #features {
+            position: absolute;
+            bottom: 0px;
+            font-family: sans-serif;
+            overflow-y: scroll;
+            height: 50vh;
+            background-color: #fafafa;
+        }
+      }
+      @media all and (min-width: 480px) {
         #map {
             position: fixed;
             width:70%;
@@ -38,12 +51,14 @@
             overflow-y: scroll;
             background-color: #fafafa;
         }
+      }
         section {
+
             padding:  25px 50px;
             padding-top: 100px;
             line-height: 25px;
             /* Optional card bottom border border-bottom: 1px solid #ddd; */
-            opacity: 0.25;
+            opacity: 0.45;
             font-size: 13px;
         }
         section.active {
@@ -51,7 +66,7 @@
         }
         section:last-child {
             border-bottom: none;
-            margin-bottom: 200px;
+            margin-bottom: 80vh;
         }
     </style>
     <!-- Navbar
@@ -112,7 +127,12 @@
 
   <div id='map'></div>
   <div id='features'>
-    <section id='blue-tang-fishing' class='active'>
+    <section id='overview' class='active'>
+        <h1>Reef to Aquarium</h1>
+        <p>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</p>
+
+    </section>
+    <section id='blue-tang-fishing'>
         <h3>Blue Tang Fishing in Toropot</h3>
         <p>Blue Tang fishing. Crazy! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
         <a href="img/IMG_3842.jpg" data-lightbox="true">
@@ -151,15 +171,6 @@
         <small id="citation">
             A <a href='www.nationalgeographic.com'>National Geographic</a> Project
         </small>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
     </section>
 
     </div>
@@ -174,6 +185,12 @@
     });
 
     var chapters = {
+      'overview': {
+          bearing: 0,
+          zoom: 2.3,
+          center: [171.09, 20.3405],
+          pitch: 0
+      },
         'blue-tang-fishing': {
             bearing: 0,
             center: [123.470379, -1.941142],
@@ -226,7 +243,7 @@
         }
     };
 
-    var activeChapterName = 'baker';
+    var activeChapterName = 'overview';
     function setActiveChapter(chapterName) {
         if (chapterName === activeChapterName) return;
 
@@ -242,6 +259,7 @@
         var element = document.getElementById(id);
         var bounds = element.getBoundingClientRect();
         return bounds.top < window.innerHeight && bounds.bottom > 0;
+
     }
 
     </script>
