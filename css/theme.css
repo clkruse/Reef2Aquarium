@@ -994,7 +994,7 @@ nav.bg-dark .logo-dark {
 .menu > li ul {
   width: 200px;
   padding: 8px 0;
-  background: #292929;
+  background: #fff;
   position: absolute;
   z-index: 99;
   opacity: 0;
@@ -1024,7 +1024,7 @@ nav.bg-dark .logo-dark {
   content: "\e649";
 }
 .menu > li > ul li a {
-  color: #fff;
+  color: #292929;
   height: auto;
   padding: 6px 24px;
 }
@@ -1343,7 +1343,7 @@ nav .cart-overview a {
     padding: 4px 0;
   }
   .menu li {
-    line-height: 24px;
+    line-height: 32px;
     float: none;
     display: block;
     width: 100%;
@@ -1398,18 +1398,18 @@ nav .cart-overview a {
   }
   .module.widget-handle {
     border-left: none;
-    border-top: 1px solid #ccc;
+    /*border-top: 1px solid #ccc;*/
     line-height: 40px;
     min-height: 40px;
   }
   .module.widget-handle .menu {
-    line-height: 40px;
+    line-height: 55px;
   }
   .module.widget-handle .menu li {
-    line-height: 40px;
+    line-height: 55px;
   }
   .module.widget-handle i {
-    line-height: 40px;
+    line-height: 55px;
   }
   .module.widget-handle .title {
     display: inline-block;
