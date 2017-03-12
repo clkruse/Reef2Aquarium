@@ -87,64 +87,30 @@
         }
       }
     </style>
-    <!-- Navbar
-		<div class="">
-		    <nav>
-		        <div class="nav-bar">
-		            <div class="module widget-handle left">
-                  <ul class="menu">
-                      <li>
-                          <a href="index.html">Reef to Aquarium</a>
-                      </li>
-		                <!-- Optional Logo image in top left corner
-                    <a href="index.html">
-		                    <img class="logo logo-light" alt="Foundry" src="img/logo-light.png">
-		                    <img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png">
-		                </a>
-                    -->
-<!--		            </div>
-		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-		                <i class="ti-menu"></i>
-		            </div>
-		            <div class="module-group right">
-		                <div class="module left">
-		                    <ul class="menu">
-		                        <li>
-		                            <a href="about.html">The Team</a>
-		                        </li>
 
-		                        <li class="has-dropdown">
-		                            <a href="stories.html">
-		                                Stories
-		                            </a>
-		                            <ul>
-		                                <li>
-                                      <a href="mr-su.html">Mr. Su</a>
-                                      <a href="#"><strike>Exporter</strike></a>
-                                      <a href="fishing.html">Fishing</a>
-                                      <a href="#"><strike>Philippines</strike></a>
-                                      <a href="#"><strike>Colorado Aquarists</strike></a>
-		                                </li>
-		                            </ul>
-		                        </li>
-		                    </ul>
-		                </div>
-		                <div class="module widget-handle left">
-                      <ul class="menu">
-                          <li>
-                              <a href="map.html">The Map</a>
-                          </li>
 
-		                  </ul>
-		                </div>
-		            </div>
-		        </div>
-		    </nav>
-		</div>
--->
-
-    <div id='map'></div>
+    <div id='map'>
+      <!-- Navbar-->
+          <nav>
+              <div class="nav-bar">
+                  <div class="module widget-handle left">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                      <!-- Optional Logo image in top left corner
+                      <a href="index.html">
+                          <img class="logo logo-light" alt="Foundry" src="img/logo-light.png">
+                          <img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png">
+                      </a>
+                      -->
+                  </div>
+              </div>
+          </nav>
+        </div>
     <div id='features'>
+
+
       <section id='overview' class='active'>
           <h1>Reef to Aquarium</h1>
           <p>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</p>
@@ -244,10 +210,11 @@
             pitch: 40
         },
         'los-angeles': {
-            bearing: 90,
+            bearing: 0,
             center: [-118.4085, 33.9416],
             zoom: 10.5,
-            pitch: 40
+            pitch: 40,
+            speed: 0.5
         }
     };
 
