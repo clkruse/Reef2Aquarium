@@ -15,7 +15,7 @@
         <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
         <link href="css/font-raleway.css" rel="stylesheet" type="text/css">
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.css' rel='stylesheet' />
+
         <style>
             body { margin:0; padding:0; }
             #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -25,7 +25,8 @@
 
     <body>
     <style>
-    @media all and (max-width: 480px) {
+      /* Mobile Style */
+      @media all and (max-width: 620px) {
         #map {
             position: fixed;
             height:50%;
@@ -38,23 +39,39 @@
             height: 50vh;
             background-color: #fafafa;
         }
+        section {
+            padding:  25px 25px;
+            padding-top: 80px;
+            line-height: 20px;
+            /* Optional card bottom border border-bottom: 1px solid #ddd; */
+            opacity: 0.45;
+            font-size: 13px;
+        }
+        section.active {
+            opacity: 1;
+        }
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 30vh;
+        }
       }
-      @media all and (min-width: 480px) {
+      /* Desktop (widescreen) Style */
+      @media all and (min-width: 620px) {
         #map {
             position: fixed;
             width:70%;
         }
         #features {
-            width: 30%;
-            margin-left: 70%;
+            position:absolute;
+            right: 0px;
             font-family: sans-serif;
             overflow-y: scroll;
+            width: 30%;
             background-color: #fafafa;
         }
-      }
-        section {
 
-            padding:  25px 50px;
+        section {
+            padding:  25px 25px;
             padding-top: 100px;
             line-height: 25px;
             /* Optional card bottom border border-bottom: 1px solid #ddd; */
@@ -68,6 +85,7 @@
             border-bottom: none;
             margin-bottom: 80vh;
         }
+      }
     </style>
     <!-- Navbar
 		<div class="">
@@ -125,55 +143,57 @@
 		</div>
 -->
 
-  <div id='map'></div>
-  <div id='features'>
-    <section id='overview' class='active'>
-        <h1>Reef to Aquarium</h1>
-        <p>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</p>
+    <div id='map'></div>
+    <div id='features'>
+      <section id='overview' class='active'>
+          <h1>Reef to Aquarium</h1>
+          <p>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</p>
 
-    </section>
-    <section id='blue-tang-fishing'>
-        <h3>Blue Tang Fishing in Toropot</h3>
-        <p>Blue Tang fishing. Crazy! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
-        <a href="img/IMG_3842.jpg" data-lightbox="true">
-          <img alt="Clownfish" src="img/IMG_3821.jpg" class="image-medium">
-        </a>
-    </section>
-    <section id='tang-farm'>
-        <h3>Blue Tang Holding Pens</h3>
-        <p>After capture, the Blue Tangs are transported to net pens in Bali. Here, they are kept to grow to a larger size.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
-        <a href="img/IMG_3842.jpg" data-lightbox="true">
-          <img alt="Clownfish" src="img/IMG_3821.jpg" class="image-medium">
-        </a>
-    </section>
-    <section id='middleman'>
-        <h3>Middleman</h3>
-        <p>After reaching a size threshold, the tangs are taken from the net pens, to sell to a middleman. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
-        <a href="img/IMG_3842.jpg" data-lightbox="true">
-          <img alt="Clownfish" src="img/IMG_3821.jpg" class="image-medium">
-        </a>
-        <br></br>
-        <a href="img/IMG_3842.jpg" data-lightbox="true">
-          <img alt="Clownfish" src="img/IMG_3821.jpg" class="image-medium">
-        </a>
-    </section>
-    <section id='bali-airport'>
-        <h3>Denpasar International Airport</h3>
-        <p>The exporter puts together a shipment of fish packed in small bags, and sends them to the airport.</p>
-    </section>
-    <section id='double-c'>
-        <h3>Double C Exporters</h3>
-        <p>he fish are dropped off at Double C fish exporters. The fish are kept here for a few days before their next step. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
-    </section>
-    <section id='los-angeles'>
-        <h3>Los Angeles Import</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
-        <small id="citation">
-            A <a href='www.nationalgeographic.com'>National Geographic</a> Project
-        </small>
-    </section>
+      </section>
+      <section id='blue-tang-fishing'>
+          <h3>Blue Tang Fishing in Toropot</h3>
+          <p>Blue Tang fishing. Crazy! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
+          <a href="img/IMG_3842.jpg" data-lightbox="true">
+            <img alt="Clownfish" src="img/IMG_3821.jpg" class="image-medium">
+          </a>
+      </section>
+      <section id='tang-farm'>
+          <h3>Blue Tang Holding Pens</h3>
+          <p>After capture, the Blue Tangs are transported to net pens in Bali. Here, they are kept to grow to a larger size.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
+          <a href="img/IMG_3842.jpg" data-lightbox="true">
+            <img alt="Clownfish" src="img/IMG_3821.jpg" class="image-medium">
+          </a>
+      </section>
+      <section id='middleman'>
+          <h3>Middleman</h3>
+          <p>After reaching a size threshold, the tangs are taken from the net pens, to sell to a middleman. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
+          <a href="img/IMG_3842.jpg" data-lightbox="true">
+            <img alt="Clownfish" src="img/IMG_3821.jpg" class="image-medium">
+          </a>
+          <br></br>
+          <a href="img/IMG_3842.jpg" data-lightbox="true">
+            <img alt="Clownfish" src="img/IMG_3821.jpg" class="image-medium">
+          </a>
+      </section>
+      <section id='bali-airport'>
+          <h3>Denpasar International Airport</h3>
+          <p>The exporter puts together a shipment of fish packed in small bags, and sends them to the airport.</p>
+      </section>
+      <section id='double-c'>
+          <h3>Double C Exporters</h3>
+          <p>he fish are dropped off at Double C fish exporters. The fish are kept here for a few days before their next step. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
+      </section>
+      <section id='los-angeles'>
+          <h3>Los Angeles Import</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
+          <small id="citation">
+              A <a href='www.nationalgeographic.com'>National Geographic</a> Project
+          </small>
+      </section>
 
     </div>
+
+
     <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
     var map = new mapboxgl.Map({
@@ -233,33 +253,53 @@
 
     // On every scroll event, check which element is on screen
     window.onscroll = function() {
+
         var chapterNames = Object.keys(chapters);
         for (var i = 0; i < chapterNames.length; i++) {
             var chapterName = chapterNames[i];
             if (isElementOnScreen(chapterName)) {
                 setActiveChapter(chapterName);
+
                 break;
             }
         }
+
+    };
+
+    features.onscroll = function() {
+
+        var chapterNames = Object.keys(chapters);
+        for (var i = 0; i < chapterNames.length; i++) {
+            var chapterName = chapterNames[i];
+            if (isElementOnScreenMobile(chapterName)) {
+                setActiveChapter(chapterName);
+
+                break;
+            }
+        }
+
     };
 
     var activeChapterName = 'overview';
+
     function setActiveChapter(chapterName) {
         if (chapterName === activeChapterName) return;
-
         map.flyTo(chapters[chapterName]);
-
         document.getElementById(chapterName).setAttribute('class', 'active');
         document.getElementById(activeChapterName).setAttribute('class', '');
-
         activeChapterName = chapterName;
     }
 
     function isElementOnScreen(id) {
         var element = document.getElementById(id);
         var bounds = element.getBoundingClientRect();
-        return bounds.top < window.innerHeight && bounds.bottom > 0;
-
+        return bounds.top < window.innerHeight && bounds.bottom > (screen.height/8);
+    }
+// Need to have separate screen calls for mobile vs. desktop to accomodate diff screen height triggers
+    function isElementOnScreenMobile(id) {
+        var element = document.getElementById(id);
+        var bounds = element.getBoundingClientRect();
+        return bounds.top < window.innerHeight && bounds.bottom > (screen.height/2.2);
     }
 
     </script>
