@@ -1,21 +1,22 @@
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
-        <link href="css/font-raleway.css" rel="stylesheet" type="text/css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
+    <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
+  </head>
 
     <body>
 
@@ -112,8 +113,8 @@
       <section>
   				<div class="container">
   					<div class="row">
-  						<div class="col-md-4 col-md-offset-0 text-right text-left-xs col-sm-5">
-  							<h1 class="bold">MIDDLEMAN</h1>
+              <div class="col-md-4 text-right text-left-xs col-sm-4 mb0">
+  							<h1 class="h1mod bold mb0">MIDDLEMAN</h1>
   							<!-- <h5 class="italic fade-1-4">An ornamental fisherman<br>sets out in a small boat</h5>-->
                 <!--<a href="img/IMG_3842.jpg" data-lightbox="true">
                   <img alt="collector" src="img/IMG_3842.jpg" class="image-medium">
@@ -278,10 +279,18 @@
 
         <!-- Map Footer -->
         <section class="p0">
-  	        <div class="map-holder pt180 pb180">
-  	            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21103.98317473181!2d114.71483542818861!3d-8.155220677189178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1487561793197"></iframe>
-  	        </div>
-  	    </section>
+          <div id='map' style='width: 100%; height: 300px;'></div>
+          <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                center: [122.7913260448723, -0.9580810734543647],
+                zoom: 8,
+                style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
+                hash: false
+            });
+          </script>
+        </section>
 
         <!-- Page Footer -->
   			<footer class="footer-2 bg-dark text-center-xs">

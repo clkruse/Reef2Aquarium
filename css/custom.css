@@ -22,3 +22,8 @@
 .list-inline a {
   color: #505050;
 }
+
+.h1mod {
+  font-size: 4.3vw;
+  margin-top:-5px;
+}
