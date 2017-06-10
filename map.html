@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -17,7 +17,7 @@
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
 
         <style>
-            body { margin:0; padding:0; overflow: hidden;}
+            body { margin:0; padding:0; }
             #map { position:absolute; top:0; bottom:0; width:100%; }
         </style>
 
@@ -93,10 +93,13 @@
     </style>
 
 
-    <div id='map'></div>
+    <div id='map'>
+
+
+        </div>
     <div id='features'>
       <!-- Navbar-->
-      <div class="nav-container-test nav-container">
+      <div class="nav-container">
           <nav>
               <div class="nav-bar">
                   <div class="module widget-handle left">
@@ -111,7 +114,7 @@
                       </a>
                       -->
                   </div>
-                  <div class="module widget-handle mobile-toggle right right-mobile-map visible-sm visible-xs">
+                  <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
                       <i class="ti-menu"></i>
                   </div>
                   <div class="module-group right">
@@ -348,7 +351,6 @@
     <script src="js/parallax.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/lightbox.min.js"></script>
-    <script window.scrollTo(0,1)></script>
 
 
       <script>
