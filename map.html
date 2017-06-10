@@ -17,7 +17,7 @@
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
 
         <style>
-            body { margin:0; padding:0; }
+            body { margin:0; padding:0; overflow: hidden;}
             #map { position:absolute; top:0; bottom:0; width:100%; }
         </style>
 
@@ -33,11 +33,10 @@
             height:50%;
         }
         #features {
-            position: fixed;
+            position: absolute;
             bottom: 0px;
             font-family: sans-serif;
             overflow-y: scroll;
-            overflow-scrolling: touch;
             -webkit-overflow-scrolling: touch;
             height: 50vh;
             background-color: #fafafa;
@@ -156,7 +155,7 @@
       </div>
 
       <section id='overview' class='active'>
-          <h1>Beef to Aquarium</h1>
+          <h1>Reef to Aquarium</h1>
           <h5>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</h5>
           <p>The blue tang is one of the most popular fish in the aquarium trade. As the star species in the film Finding Dory, these fish are in greater demand than ever. Unfortunately, the blue tang cannot be captively bred. This creates a global supply chain that connects fishermen in small Pacific islands with hobby aquarists on the other side of the world. This is the story of how a Blue Tang travels around the world.</p>
           <a href="img/IMG_3681squaresmall.jpg" data-lightbox="true">
