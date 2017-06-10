@@ -18,7 +18,7 @@
 
         <style>
             body { margin:0; padding:0; overflow: hidden;}
-            #map { position:absolute; top:0; bottom:0; width:100%; }
+            #map { position:absolute;  bottom:0; width:100%; }
         </style>
 
     </head>
@@ -29,16 +29,17 @@
       /* Mobile Style */
       @media all and (max-width: 620px) {
         #map {
-            position: fixed;
-            height:50%;
+            position: absolute;
+            height:50vh;
+            bottom: 0px;
         }
         #features {
             position: absolute;
-            bottom: 0px;
+
             font-family: sans-serif;
             overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
-            height: 50vh;
+            height: 50%;
             background-color: #fafafa;
         }
         section {
@@ -93,7 +94,7 @@
     </style>
 
 
-    <div id='map'></div>
+
     <div id='features'>
       <!-- Navbar-->
       <div class="nav-container-test nav-container">
@@ -221,7 +222,7 @@
       </section>
 
     </div>
-
+    <div id='map'></div>
 
     <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
