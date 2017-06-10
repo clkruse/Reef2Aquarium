@@ -47,6 +47,6 @@
   margin: 0;
 }
 
-.right-mobile-map {
-  position: absolute;
+.nav-container-test {
+  overflow: hidden;
 }
