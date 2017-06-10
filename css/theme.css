@@ -578,7 +578,7 @@ section,
 footer {
   padding: 3% 0;
   position: relative;
-  overflow: scroll;
+  overflow: hidden;
 }
 footer {
   padding: 24px 0;
