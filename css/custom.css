@@ -27,3 +27,22 @@
   font-size: 4.3vw;
   margin-top:-5px;
 }
+
+.btn-NG:hover,
+.image-bg .btn:hover,
+.image-bg .btn:visited:hover {
+  background: #ffce00;
+  border-color: #ffce00;
+}
+.module.widget-handle-menu {
+  padding: 0 16px;
+  cursor: pointer;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}

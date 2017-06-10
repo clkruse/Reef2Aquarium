@@ -60,14 +60,15 @@
       @media all and (min-width: 620px) {
         #map {
             position: fixed;
-            width:70%;
+            right: 0px;
+            width:50%;
         }
         #features {
             position:absolute;
-            right: 0px;
+            left: 0px;
             font-family: sans-serif;
             overflow-y: scroll;
-            width: 30%;
+            width: 50%;
             background-color: #fafafa;
         }
 
@@ -92,6 +93,7 @@
 
     <div id='map'>
       <!-- Navbar-->
+      <div class="nav-container">
           <nav>
               <div class="nav-bar">
                   <div class="module widget-handle left">
@@ -106,8 +108,46 @@
                       </a>
                       -->
                   </div>
+                  <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                      <i class="ti-menu"></i>
+                  </div>
+                  <div class="module-group right">
+                    <ul class="menu">
+                        <li class="module widget-handle-menu">
+                          <a href="about.html">The Team</a>
+                        </li>
+                        <li class="module widget-handle-menu">
+                          <a href="stories.html">Stories</a>
+                        </li>
+
+
+                        <!--<li class="has-dropdown">
+                            <a href="stories.html">
+                                Stories
+                            </a>
+                            <ul>
+                                <li>
+                                  <a href="mr-su.html">Mr. Su</a>
+                                  <a href="#"><strike>Exporter</strike></a>
+                                  <a href="fishing.html">Fishing</a>
+                                  <a href="#"><strike>Philippines</strike></a>
+                                  <a href="#"><strike>Colorado Aquarists</strike></a>
+                                </li>
+                            </ul>
+                        </li>-->
+
+
+                      <div class="module widget-handle right">
+                        <li>
+                          <a href="map.html">The Map</a>
+                        </li>
+                      </div>
+                  </ul>
+              </div>
               </div>
           </nav>
+      </div>
+
         </div>
     <div id='features'>
 
@@ -126,8 +166,9 @@
           <img alt="Captive Blue Tang" src="img/IMG_0169-2.jpg" class="image-medium">
           </a>
           <p><br/>The brightly coloured coral gardens of the Indo-Pacific are where Dory’s journey from reef to aquarium begins. Unlike Nemo, Dory is largely caught in the wild. While she lives on reefs across the globe - from Hawaii to Japan - Indonesia and the Philippines are where most blue tangs are collected. Dory’s passage from coral reefs to home aquariums around the world creates a tremendous supply chain - one that has remained largely unknown, until now. Join us where we first meet Dory, in her home - the ancient rainforests of the sea.
-            <br/>
-            <a href=reefs.html>Dive in to Indonesia's Reefs</a>
+          <br/>
+          <br/>
+            <a class="btn btn-lg btn-NG" href=reefs.html>Dive in to Indonesia's Reefs</a>
           </p>
       </section>
 
@@ -140,7 +181,9 @@
             <img alt="Fisherman" src="img/IMG_3821.jpg" class="image-medium">
           </a>
           <p><br/>Dory’s life begins on coral reefs, but her global journey doesn’t really start until her first contact with an aquarium fisherman, often called an ‘ornamental harvester’ or ‘collector’. Using handmade nets, snorkel masks and fins, collectors are experts at catching up to hundreds of fish per day. These fisherman reside in over 45 countries across the globe and are Dory’s first link into the global aquarium trade. Often, harvesters tend to be from lower socioeconomic classes, have little education, and rely on collecting aquarium fish as their sole source of income.  Collectors are linked to fish in every way, relying on them and other marine resources for food, finances and their futures.
-            <br/><a href=collector.html>Meet Rasdin, a Sama-Bajau or “Sea-Nomad”</a> from the Bokan Kepulauan District in Central Sulawesi, Indonesia.
+            <br/>
+            <br/>
+            <a class="btn btn-lg btn-NG" href=collector.html>Meet Rasdin, a “Sea-Nomad”</a> from the Bokan Kepulauan District in Central Sulawesi, Indonesia.
           </p>
 
       </section>
@@ -185,8 +228,8 @@
     mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
     var map = new mapboxgl.Map({
         container: 'map',
-        zoom: 2.3,
-        center: [171.09, 20.3405],
+        zoom: 1.95,
+        center: [183, 20],
         style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
         hash: false
     });
@@ -194,8 +237,8 @@
     var chapters = {
       'overview': {
           bearing: 0,
-          zoom: 2.3,
-          center: [171.09, 20.3405],
+          zoom: 1.95,
+          center: [183, 20],
           pitch: 0
       },
         'home-on-the-reef': {
