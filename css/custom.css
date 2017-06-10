@@ -48,5 +48,5 @@
 }
 
 .right-mobile-map {
-  right: 16px;
+  position: absolute;
 }
