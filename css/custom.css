@@ -46,3 +46,7 @@
   user-select: none;
   margin: 0;
 }
+
+.right-mobile-map {
+  right: 16px;
+}
