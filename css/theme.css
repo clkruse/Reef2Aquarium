@@ -729,7 +729,7 @@ footer.bg-dark li,
 /*!---------- 6. BUTTONS ----------*/
 .btn {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 2px solid #47b475;
+  border: 2px solid #000;
   padding: 0 26px;
   height: 40px;
   min-width: 150px;
@@ -831,11 +831,11 @@ body.btn-rounded .btn {
   color: #fff;
 }
 .btn:visited {
-  color: #47b475;
+  color: #000;
 }
 .btn-white:visited,
 .btn:visited:hover {
-  color: #fff;
+  color: #000;
 }
 .btn-white:visited:hover {
   color: #222;
