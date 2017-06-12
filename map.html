@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>R2A - The Journey</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -162,7 +162,7 @@
           </br>
           <h3 class="bold">Meet Dory</h3>
           <a href="img/IMG_3681squaresmall.jpg" data-lightbox="true">
-          <img alt="Blue Tang Trade" src="img/IMG_3681squaresmall.jpg" class="image-medium">
+          <img alt="Blue Tang Trade" src="img/IMG_3681squaresmall.jpg" class="image-medium mb-s-16">
           </a>
           <p class="mb24"><br/>The brightly coloured coral gardens of the Indo-Pacific are where Dory’s journey from reef to aquarium begins. Unlike Nemo, Dory is largely caught in the wild. While she lives on reefs across the globe - from Hawaii to Japan - Indonesia and the Philippines are where most blue tangs are collected. Dory’s passage from coral reefs to home aquariums around the world creates a tremendous supply chain - one that has remained largely unknown, until now. Join us where we first meet Dory, in her home - the ancient rainforests of the sea.
           </p>
@@ -235,7 +235,7 @@
     mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
     var map = new mapboxgl.Map({
         container: 'map',
-        zoom: 1.95,
+        zoom: 1.3,
         center: [183, 20],
         style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
         hash: false
@@ -244,22 +244,24 @@
     var chapters = {
       'overview': {
           bearing: 0,
-          zoom: 1.95,
+          zoom: 1.4,
           center: [183, 20],
-          pitch: 0
+          pitch: 0,
+          speed: 0.7
       },
       'home-on-the-reef': {
           bearing: 0,
           center: [118.6, -5.2],
-          zoom: 4.75,
-          pitch: 0
+          zoom: 4.25,
+          speed: 0.7
       },
       'collectors': {
           duration: 6000,
           center: [123.6339,-1.9416],
           bearing: 90,
           zoom: 10.5,
-          pitch: 50
+          pitch: 50,
+          speed: 0.7
       },
       'los-angeles': {
           bearing: 0,
@@ -272,14 +274,14 @@
           bearing: 30,
           center: [122.7913260448723, -0.9580810734543647],
           zoom: 11,
-          speed: 0.6,
+          speed: 0.7,
           pitch: 30
       },
       'exporter': {
           bearing: 0,
-          center: [115.166787,-8.746717],
+          center: [115.186787,-8.766717],
           zoom: 12.3,
-          speed: 0.5
+          speed: 0.7
       },
       'los-angeles': {
           bearing: 0,
@@ -292,6 +294,7 @@
           bearing: 0,
           center: [-104.65, 39.04],
           zoom: 9,
+          speed: 0.7
       }
     };
 
