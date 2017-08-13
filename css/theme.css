@@ -957,12 +957,12 @@ nav.bg-dark .logo-dark {
   width: auto;
 }
 .menu li a {
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #292929;
-  opacity: 0.5;
+  color: #000000;
+  opacity: 0.6;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1024,7 +1024,7 @@ nav.bg-dark .logo-dark {
   content: "\e649";
 }
 .menu > li > ul li a {
-  color: #292929;
+  color: #161616;
   height: auto;
   padding: 6px 24px;
 }

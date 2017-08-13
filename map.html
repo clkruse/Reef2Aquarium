@@ -1,134 +1,165 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>R2A - The Journey</title>
-        <link rel='shortcut icon' href='img/favicon.ico?v=2'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
-        <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
 
-        <style>
-            body { margin:0; padding:0; }
-            #map { position:absolute; top:0; bottom:0; width:100%; }
-        </style>
+<head>
+  <meta charset="utf-8">
+  <title>R2A - The Journey</title>
+  <link rel='shortcut icon' href='img/favicon.ico?v=2'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
+  <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
 
-    </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-    <body>
-    <style>
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 
-      /* Mobile Style */
-      @media all and (max-width: 620px) {
-        #map {
-            position: fixed;
-            height:50%;
-        }
-        #features {
-            position: absolute;
-            bottom: 0px;
-            font-family: sans-serif;
-            overflow-y: scroll;
-            -webkit-overflow-scrolling: touch;
-            height: 50vh;
-            background-color: #fafafa;
-        }
-        section {
-            padding:  25px 25px;
-            padding-top: 80px;
-            line-height: 20px;
-            /* Optional card bottom border border-bottom: 1px solid #ddd; */
-            opacity: 0.45;
-            font-size: 13px;
-        }
-        section.active {
-            opacity: 1;
-        }
-        section:last-child {
-            border-bottom: none;
-            margin-bottom: 30vh;
-        }
-      }
-      /* Desktop (widescreen) Style */
-      @media all and (min-width: 620px) {
-        #map {
-            position: fixed;
-            right: 0px;
-            top: 0px;
-            width:50%;
-        }
-        #features {
-            position:absolute;
-            left: 0px;
-            font-family: sans-serif;
-            overflow-y: scroll;
-            width: 50%;
-            background-color: #fafafa;
-        }
+</head>
 
-        section {
-            padding:  25px 25px;
-            padding-top: 100px;
-            line-height: 25px;
-            /* Optional card bottom border border-bottom: 1px solid #ddd; */
-            opacity: 0.45;
-            font-size: 13px;
-        }
-        section.active {
-            opacity: 1;
-        }
-        section:last-child {
-            border-bottom: none;
-            margin-bottom: 80vh;
-        }
-      }
-    </style>
+<body>
 
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <div class="content">
 
-    <div id='map'>
-
-
+        <h1 class="bold text-center">Meet Dory</h1>
+        <div class="col-md-4 col-md-offset-0 text-left text-left-xs col-sm-4">
+          <a href="https://vignette1.wikia.nocookie.net/parody/images/8/82/Dory_finding_nemo.png/revision/latest?cb=20150815221237" data-lightbox="true" data-title="gottaa get a better blue tang hero shot">
+            <img alt="Blue Tang Trade" src="https://vignette1.wikia.nocookie.net/parody/images/8/82/Dory_finding_nemo.png/revision/latest?cb=20150815221237" class="image-medium mb-s-16">
+        </a>
         </div>
-    <div id='features'>
-      <!-- Navbar-->
-      <div class="nav-container">
-          <nav>
-              <div class="nav-bar">
-                  <div class="module widget-handle left">
-                    <ul class="menu">
-                        <li>
-                            <a href="index.html">Reef to Aquarium</a>
-                        </li>
-                      <!-- Optional Logo image in top left corner
+        <div class="col-md-7 col-sm-7">
+          <p>Dory (Paracanthurus hepatus) is a little fish with a big list of names: blue tang, royal blue tang, hippo tang, regal tang, and blue surgeonfish. While least commonly used, the last name is perhaps most fitting as Dory belongs to the surgeonfish
+            family, aptly named for her razor sharp tail spines. In some areas of the world, local fisherman call Dory letter six, as the number is seemingly spelled out in black markings on the side of her royal blue body. She is one of the most popular
+            fish in the aquarium trade today, with tens of thousands captured in the wild and imported into the United States every year. Follow Dory as she passes from net to hand to tank on her epic voyage from Reef to Aquarium.</p>
+          <a class="btn btn-lg btn-NG" href="#popup1">Explore the Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    /* Mobile Style */
+
+    @media all and (max-width: 620px) {
+      #map {
+        position: fixed;
+        height: 50%;
+      }
+      #features {
+        position: absolute;
+        bottom: 0px;
+        font-family: sans-serif;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        height: 50vh;
+        background-color: #fafafa;
+      }
+      section {
+        padding: 25px 25px;
+        padding-top: 80px;
+        line-height: 20px;
+        /* Optional card bottom border border-bottom: 1px solid #ddd; */
+        opacity: 0.45;
+        font-size: 13px;
+      }
+      section.active {
+        opacity: 1;
+      }
+      section:last-child {
+        border-bottom: none;
+        margin-bottom: 30vh;
+      }
+    }
+    /* Desktop (widescreen) Style */
+
+    @media all and (min-width: 620px) {
+      #map {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        width: 50%;
+      }
+      #features {
+        position: absolute;
+        left: 0px;
+        font-family: sans-serif;
+        overflow-y: scroll;
+        width: 50%;
+        background-color: #fafafa;
+      }
+
+      section {
+        padding: 25px 25px;
+        padding-top: 100px;
+        line-height: 25px;
+        /* Optional card bottom border border-bottom: 1px solid #ddd; */
+        opacity: 0.45;
+        font-size: 13px;
+      }
+      section.active {
+        opacity: 1;
+      }
+      section:last-child {
+        border-bottom: none;
+        margin-bottom: 80vh;
+      }
+    }
+  </style>
+
+
+  <div id='map'>
+
+
+  </div>
+  <div id='features'>
+    <!-- Navbar-->
+    <div class="nav-container">
+      <nav>
+        <div class="nav-bar">
+          <div class="module widget-handle left">
+            <ul class="menu">
+              <li>
+                <a href="index.html">Reef to Aquarium</a>
+              </li>
+              <!-- Optional Logo image in top left corner
                       <a href="index.html">
                           <img class="logo logo-light" alt="Foundry" src="img/logo-light.png">
                           <img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png">
                       </a>
                       -->
-                  </div>
-                  <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-                      <i class="ti-menu"></i>
-                  </div>
-                  <div class="module-group right">
-                    <ul class="menu">
-                        <li class="module widget-handle-menu">
-                          <a href="about.html">The Team</a>
-                        </li>
-                        <li class="module widget-handle-menu">
-                          <a href="stories.html">Stories</a>
-                        </li>
+          </div>
+          <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+            <i class="ti-menu"></i>
+          </div>
+          <div class="module-group right">
+            <ul class="menu">
+              <li class="module widget-handle-menu">
+                <a href="about.html">The Team</a>
+              </li>
+              <li class="module widget-handle-menu">
+                <a href="stories.html">Stories</a>
+              </li>
 
 
-                        <!--<li class="has-dropdown">
+              <!--<li class="has-dropdown">
                             <a href="stories.html">
                                 Stories
                             </a>
@@ -144,232 +175,242 @@
                         </li>-->
 
 
-                      <div class="module widget-handle right">
-                        <li>
-                          <a href="map.html">The Map</a>
-                        </li>
-                      </div>
-                  </ul>
+              <div class="module widget-handle right">
+                <li>
+                  <a href="map.html">The Map</a>
+                </li>
               </div>
-              </div>
-          </nav>
-      </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-      <section id='overview' class='active'>
-          <h1 class="bold large">Reef to Aquarium</h1>
-          <h4>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</h4>
-          <p>The blue tang is one of the most popular fish in the aquarium trade. As the star species in the film Finding Dory, these fish are in greater demand than ever. Unfortunately, the blue tang cannot be captively bred. This creates a global supply chain that connects fishermen in small Pacific islands with hobby aquarists on the other side of the world. This is the story of how a Blue Tang travels around the world.</p>
-          </br>
-          </br>
-          <h3 class="bold">Meet Dory</h3>
-          <a href="img/IMG_3681squaresmall.jpg" data-lightbox="true" data-title="Photo by Caleb Kruse">
-          <img alt="Blue Tang Trade" src="img/IMG_3681squaresmall.jpg" class="image-medium mb-s-16">
-          </a>
-          <p class="mb24"><br/>The brightly coloured coral gardens of the Indo-Pacific are where Dory’s journey from reef to aquarium begins. Unlike Nemo, Dory is largely caught in the wild. While she lives on reefs across the globe - from Hawaii to Japan - Indonesia and the Philippines are where most blue tangs are collected. Dory’s passage from coral reefs to home aquariums around the world creates a tremendous supply chain - one that has remained largely unknown, until now. Join us where we first meet Dory, in her home - the ancient rainforests of the sea.
-          </p>
-      </section>
+    <section id='overview' class='active'>
+      <h1 class="bold large">Reef to Aquarium</h1>
+      <h4>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</h4>
+      <p>The blue tang is one of the most popular fish in the aquarium trade. As the star species in the film Finding Dory, these fish are in greater demand than ever. Unfortunately, the blue tang cannot be captively bred. This creates a global supply chain
+        that connects fishermen in small Pacific islands with hobby aquarists on the other side of the world. This is the story of how a Blue Tang travels around the world.</p>
+      </br>
+      </br>
+    </section>
 
-      <section id='home-on-the-reef'>
-          <h3 class="bold">Home on the Reef</h3>
-          <a href="img/IMG_0169-2.jpg" data-lightbox="true">
+    <section id='home-on-the-reef'>
+      <h3 class="bold">Home on the Reef</h3>
+      <a href="img/IMG_0169-2.jpg" data-lightbox="true">
           <img alt="Captive Blue Tang" src="img/IMG_0169-2.jpg" class="image-medium mb-s-16">
           </a>
-          <p class="mb24"><br/>The brightly coloured coral gardens of the Indo-Pacific are where Dory’s journey from reef to aquarium begins. Unlike Nemo, Dory is largely caught in the wild. While she lives on reefs across the globe - from Hawaii to Japan - Indonesia and the Philippines are where most blue tangs are collected. Dory’s passage from coral reefs to home aquariums around the world creates a tremendous supply chain - one that has remained largely unknown, until now. Join us where we first meet Dory, in her home - the ancient rainforests of the sea.
-          </p>
-          <a class="btn btn-lg btn-NG" href=reefs.html>Dive in to Indonesia's Reefs</a>
-      </section>
+      <p class="mb24"><br/>The brightly coloured coral gardens of the Indo-Pacific are where Dory’s journey from reef to aquarium begins. Unlike Nemo, Dory is largely caught in the wild. While she lives on reefs across the globe - from Hawaii to Japan - Indonesia and
+        the Philippines are where most blue tangs are collected. Dory’s passage from coral reefs to home aquariums around the world creates a tremendous supply chain - one that has remained largely unknown, until now. Join us where we first meet Dory,
+        in her home - the ancient rainforests of the sea.
+      </p>
+      <a class="btn btn-lg btn-NG" href=reefs.html>Dive in to Indonesia's Reefs</a>
+    </section>
 
 
-      <section id='collectors'>
-          <h3 class="bold">Collectors</h3>
-          <!--<h5>"The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore.”
+    <section id='collectors'>
+      <h3 class="bold">Collectors</h3>
+      <!--<h5>"The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore.”
             <br/>- Vincent Van Gogh</h5>-->
-          <a href="img/IMG_3821.jpg" data-lightbox="true">
+      <a href="img/IMG_3821.jpg" data-lightbox="true">
             <img alt="Fisherman" src="img/IMG_3821.jpg" class="image-medium mb-s-16">
           </a>
-          <p class="mb24"><br/>Dory’s life begins on coral reefs, but her global journey doesn’t really start until her first contact with an aquarium fisherman, often called an ‘ornamental harvester’ or ‘collector’. Using handmade nets, snorkel masks and fins, collectors are experts at catching up to hundreds of fish per day. These fisherman reside in over 45 countries across the globe and are Dory’s first link into the global aquarium trade. Often, harvesters tend to be from lower socioeconomic classes, have little education, and rely on collecting aquarium fish as their sole source of income.  Collectors are linked to fish in every way, relying on them and other marine resources for food, finances and their futures. <br/>Meet Rasdin, a Sama-Bajau or “Sea-Nomad” from the Bokan Kepulauan District in Central Sulawesi, Indonesia.
-          </p>
-          <a class="btn btn-lg btn-NG" href=collector.html>Meet Rasdin, a “Sea-Nomad”</a>
-      </section>
+      <p class="mb24"><br/>Dory’s life begins on coral reefs, but her global journey doesn’t really start until her first contact with an aquarium fisherman, often called an ‘ornamental harvester’ or ‘collector’. Using handmade nets, snorkel masks and fins, collectors
+        are experts at catching up to hundreds of fish per day. These fisherman reside in over 45 countries across the globe and are Dory’s first link into the global aquarium trade. Often, harvesters tend to be from lower socioeconomic classes, have
+        little education, and rely on collecting aquarium fish as their sole source of income. Collectors are linked to fish in every way, relying on them and other marine resources for food, finances and their futures. <br/>Meet Rasdin, a Sama-Bajau
+        or “Sea-Nomad” from the Bokan Kepulauan District in Central Sulawesi, Indonesia.
+      </p>
+      <a class="btn btn-lg btn-NG" href=collector.html>Meet Rasdin, a “Sea-Nomad”</a>
+    </section>
 
-      <section id='middleman'>
-          <h3 class="bold">Middleman</h3>
-          <a href="img/IMG_0116.jpg" data-lightbox="true">
+    <section id='middleman'>
+      <h3 class="bold">Middleman</h3>
+      <a href="img/IMG_0116.jpg" data-lightbox="true">
             <img alt="Middleman" src="img/IMG_0116.jpg" class="image-medium mb-s-16">
           </a>
-          <p class="mb24"><br/>What happens after Dory is collected from her home? Harvesters hand over their fish to middlemen - the next step of Dory’s journey. In many communities, middlemen collect fish from between 7-20 harvesters. Often business savvy, the middlemen are the first indication of the global reach of the aquarium trade. Responsible for selling, rearing and transporting the fish for export, middleman juggle fish biology, community-relations, business and logistics.
-          <br/>Meet Sarly, the middleman who works with the Sama-Bajau fishers in Toropot, Indonesia as he helps move fish from the waters of Indonesia to homes around the world.</p>
-          <a class="btn btn-lg btn-NG" href=middleman.html>Meet Sarly, a Middleman</a>
-      </section>
-      <section id='exporter'>
-          <h3 class="bold">Exporter</h3>
-          <a href="img/IMG_3405.jpg" data-lightbox="true">
+      <p class="mb24"><br/>What happens after Dory is collected from her home? Harvesters hand over their fish to middlemen - the next step of Dory’s journey. In many communities, middlemen collect fish from between 7-20 harvesters. Often business savvy, the middlemen
+        are the first indication of the global reach of the aquarium trade. Responsible for selling, rearing and transporting the fish for export, middleman juggle fish biology, community-relations, business and logistics.
+        <br/>Meet Sarly, the middleman who works with the Sama-Bajau fishers in Toropot, Indonesia as he helps move fish from the waters of Indonesia to homes around the world.</p>
+      <a class="btn btn-lg btn-NG" href=middleman.html>Meet Sarly, a Middleman</a>
+    </section>
+    <section id='exporter'>
+      <h3 class="bold">Exporter</h3>
+      <a href="img/IMG_3405.jpg" data-lightbox="true">
             <img alt="Double C Exporters" src="img/IMG_3405.jpg" class="image-medium mb-s-16">
           </a>
-          <p class="mb24"><br/>The aquarium trade is big business, a multi-billion dollar industry that links the most remote reefs and communities with densely populated cities around the globe. Demand for these remarkable, colourful creatures has been steadily rising since our world became globally connected by air in the 1970’s - making the rapid transport of live fish clear across the globe possible. Today, some 45 nations supply a staggering 2000 species of fish to countries around the world, though they mostly fill aquariums in the United States, Japan and Western Europe. To meet the demand for exotic salt-water (known as marine) fishes, a new profession was born: the ornamental fish exporter.
-          <br/>Meet Conrad Chen, one of the largest ornamental fish exporters in Indonesia, as we explore how the aquarium trade evolves from small-scale harvesting into big, global business.
-          </p>
-          <a class="btn btn-lg btn-NG" href=exporter.html>Meet Conrad, an Exporter</a>
+      <p class="mb24"><br/>The aquarium trade is big business, a multi-billion dollar industry that links the most remote reefs and communities with densely populated cities around the globe. Demand for these remarkable, colourful creatures has been steadily rising since
+        our world became globally connected by air in the 1970’s - making the rapid transport of live fish clear across the globe possible. Today, some 45 nations supply a staggering 2000 species of fish to countries around the world, though they mostly
+        fill aquariums in the United States, Japan and Western Europe. To meet the demand for exotic salt-water (known as marine) fishes, a new profession was born: the ornamental fish exporter.
+        <br/>Meet Conrad Chen, one of the largest ornamental fish exporters in Indonesia, as we explore how the aquarium trade evolves from small-scale harvesting into big, global business.
+      </p>
+      <a class="btn btn-lg btn-NG" href=exporter.html>Meet Conrad, an Exporter</a>
 
-      </section>
-      <section id='los-angeles'>
-          <h3 class="bold">Los Angeles Import</h3>
-          <p class="mb24"><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl. Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
+    </section>
+    <section id='los-angeles'>
+      <h3 class="bold">Los Angeles Import</h3>
+      <p class="mb24"><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl.
+        Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
 
-      </section>
-      <section id='colorado'>
-        <h3 class="bold">Aquarists</h3>
-        <a href="img/IMG_3148.jpg" data-lightbox="true">
+    </section>
+    <section id='colorado'>
+      <h3 class="bold">Aquarists</h3>
+      <a href="img/IMG_3148.jpg" data-lightbox="true">
           <img alt="Colorado Aquarist" src="img/IMG_3148.jpg" class="image-medium mb-s-16">
         </a>
 
-        <p><br/>yadhadoihaepfohiadihf</p>
-        <small id="citation">
+      <p><br/>yadhadoihaepfohiadihf</p>
+      <small id="citation">
             A <a href='www.nationalgeographic.com'>National Geographic</a> Project
         </small>
-      </section>
+    </section>
 
-    </div>
+  </div>
 
 
-    <script>
+  <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
     var map = new mapboxgl.Map({
-        container: 'map',
-        zoom: 1.3,
-        center: [183, 20],
-        style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
-        hash: false
+      container: 'map',
+      zoom: 1.3,
+      center: [183, 20],
+      style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
+      hash: false
     });
 
     var chapters = {
       'overview': {
-          bearing: 0,
-          zoom: 1.4,
-          center: [183, 20],
-          pitch: 0,
-          speed: 0.7
+        bearing: 0,
+        zoom: 1.4,
+        center: [183, 20],
+        pitch: 0,
+        speed: 0.7
       },
       'home-on-the-reef': {
-          bearing: 0,
-          center: [118.6, -5.2],
-          zoom: 4.25,
-          speed: 0.7
+        bearing: 0,
+        center: [118.6, -5.2],
+        zoom: 4.25,
+        speed: 0.7
       },
       'collectors': {
-          duration: 6000,
-          center: [123.6339,-1.9416],
-          bearing: 90,
-          zoom: 10.5,
-          pitch: 50,
-          speed: 0.7
+        duration: 6000,
+        center: [123.6339, -1.9416],
+        bearing: 90,
+        zoom: 10.5,
+        pitch: 50,
+        speed: 0.7
       },
       'los-angeles': {
-          bearing: 0,
-          center: [-118.4085, 33.9416],
-          zoom: 10.5,
-          pitch: 40,
-          speed: 0.7
+        bearing: 0,
+        center: [-118.4085, 33.9416],
+        zoom: 10.5,
+        pitch: 40,
+        speed: 0.7
       },
       'middleman': {
-          bearing: 30,
-          center: [122.7913260448723, -0.9580810734543647],
-          zoom: 11,
-          speed: 0.7,
-          pitch: 30
+        bearing: 30,
+        center: [122.7913260448723, -0.9580810734543647],
+        zoom: 11,
+        speed: 0.7,
+        pitch: 30
       },
       'exporter': {
-          bearing: 0,
-          center: [115.186787,-8.766717],
-          zoom: 12.3,
-          speed: 0.7
+        bearing: 0,
+        center: [115.186787, -8.766717],
+        zoom: 12.3,
+        speed: 0.7
       },
       'los-angeles': {
-          bearing: 0,
-          center: [-118.4085, 33.9416],
-          zoom: 10.5,
-          pitch: 40,
-          speed: 0.7
+        bearing: 0,
+        center: [-118.4085, 33.9416],
+        zoom: 10.5,
+        pitch: 40,
+        speed: 0.7
       },
       'colorado': {
-          bearing: 0,
-          center: [-104.65, 39.04],
-          zoom: 9,
-          speed: 0.7
+        bearing: 0,
+        center: [-104.65, 39.04],
+        zoom: 9,
+        speed: 0.7
       }
     };
 
     // On every scroll event, check which element is on screen
     window.onscroll = function() {
 
-        var chapterNames = Object.keys(chapters);
-        for (var i = 0; i < chapterNames.length; i++) {
-            var chapterName = chapterNames[i];
-            if (isElementOnScreen(chapterName)) {
-                setActiveChapter(chapterName);
+      var chapterNames = Object.keys(chapters);
+      for (var i = 0; i < chapterNames.length; i++) {
+        var chapterName = chapterNames[i];
+        if (isElementOnScreen(chapterName)) {
+          setActiveChapter(chapterName);
 
-                break;
-            }
+          break;
         }
+      }
 
     };
 
     features.onscroll = function() {
 
-        var chapterNames = Object.keys(chapters);
-        for (var i = 0; i < chapterNames.length; i++) {
-            var chapterName = chapterNames[i];
-            if (isElementOnScreenMobile(chapterName)) {
-                setActiveChapter(chapterName);
+      var chapterNames = Object.keys(chapters);
+      for (var i = 0; i < chapterNames.length; i++) {
+        var chapterName = chapterNames[i];
+        if (isElementOnScreenMobile(chapterName)) {
+          setActiveChapter(chapterName);
 
-                break;
-            }
+          break;
         }
+      }
 
     };
 
     var activeChapterName = 'overview';
 
     function setActiveChapter(chapterName) {
-        if (chapterName === activeChapterName) return;
-        map.flyTo(chapters[chapterName]);
-        document.getElementById(chapterName).setAttribute('class', 'active');
-        document.getElementById(activeChapterName).setAttribute('class', '');
-        activeChapterName = chapterName;
+      if (chapterName === activeChapterName) return;
+      map.flyTo(chapters[chapterName]);
+      document.getElementById(chapterName).setAttribute('class', 'active');
+      document.getElementById(activeChapterName).setAttribute('class', '');
+      activeChapterName = chapterName;
     }
 
     function isElementOnScreen(id) {
-        var element = document.getElementById(id);
-        var bounds = element.getBoundingClientRect();
-        return bounds.top < window.innerHeight && bounds.bottom > (screen.height/8);
+      var element = document.getElementById(id);
+      var bounds = element.getBoundingClientRect();
+      return bounds.top < window.innerHeight && bounds.bottom > (screen.height / 8);
     }
-// Need to have separate screen calls for mobile vs. desktop to accomodate diff screen height triggers
+    // Need to have separate screen calls for mobile vs. desktop to accomodate diff screen height triggers
     function isElementOnScreenMobile(id) {
-        var element = document.getElementById(id);
-        var bounds = element.getBoundingClientRect();
-        return bounds.top < window.innerHeight && bounds.bottom > (screen.height/2.2);
+      var element = document.getElementById(id);
+      var bounds = element.getBoundingClientRect();
+      return bounds.top < window.innerHeight && bounds.bottom > (screen.height / 2.2);
     }
+  </script>
 
-    </script>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/flexslider.min.js"></script>
-    <script src="js/masonry.min.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/lightbox.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flexslider.min.js"></script>
+  <script src="js/masonry.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/lightbox.min.js"></script>
 
 
-      <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-3737359-1', 'auto');
-      ga('send', 'pageview');
-
-      </script>
+    ga('create', 'UA-3737359-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
+
 </html>
