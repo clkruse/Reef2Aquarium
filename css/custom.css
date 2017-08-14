@@ -69,7 +69,7 @@
   display: block;
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
-  z-index: 1000;
+  z-index: 9;
 }
 .overlay .popup {
   background: #fff;
@@ -79,7 +79,7 @@
   top: 10%;
   left: 10%;
   padding: 25px;
-  z-index: 1000;
+  z-index: 10;
   overflow: scroll;
 }
 .overlay:target .popup {
@@ -91,7 +91,7 @@
 @media screen and (max-width: 768px){
   .box{
     width: 70%;
-
+    z-index: 9;
     overflow: scroll;
   }
   .overlay .popup{
@@ -99,5 +99,6 @@
     height:80%;
     left: 15%;
     overflow: scroll;
+    z-index: 10;
   }
 }
