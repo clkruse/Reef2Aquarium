@@ -13,116 +13,20 @@
   <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/mapstyle.css" rel="stylesheet" type="text/css" media="all" />
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
   <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
 
-    #map {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+
+
 
 </head>
 
 <body>
 
-  <div id="popup1" class="overlay">
-    <div class="popup">
-      <div class="content">
-
-        <h1 class="bold text-center">Meet Dory</h1>
-        <div class="col-md-4 col-md-offset-0 text-left text-left-xs col-sm-4">
-          <a href="https://vignette1.wikia.nocookie.net/parody/images/8/82/Dory_finding_nemo.png/revision/latest?cb=20150815221237" data-lightbox="true" data-title="gottaa get a better blue tang hero shot">
-            <img alt="Blue Tang Trade" src="https://vignette1.wikia.nocookie.net/parody/images/8/82/Dory_finding_nemo.png/revision/latest?cb=20150815221237" class="image-medium mb-s-16">
-        </a>
-        </div>
-        <div class="col-md-7 col-sm-7">
-          <p>Dory (Paracanthurus hepatus) is a little fish with a big list of names: blue tang, royal blue tang, hippo tang, regal tang, and blue surgeonfish. While least commonly used, the last name is perhaps most fitting as Dory belongs to the surgeonfish
-            family, aptly named for her razor sharp tail spines. In some areas of the world, local fisherman call Dory letter six, as the number is seemingly spelled out in black markings on the side of her royal blue body. She is one of the most popular
-            fish in the aquarium trade today, with tens of thousands captured in the wild and imported into the United States every year. Follow Dory as she passes from net to hand to tank on her epic voyage from Reef to Aquarium.</p>
-          <a class="btn btn-lg btn-NG" href="#popup1">Explore the Map</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <style>
-    /* Mobile Style */
-
-    @media all and (max-width: 620px) {
-      #map {
-        position: fixed;
-        height: 50%;
-      }
-      #features {
-        position: absolute;
-        bottom: 0px;
-        font-family: sans-serif;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        height: 50vh;
-        background-color: #fafafa;
-      }
-      section {
-        padding: 25px 25px;
-        padding-top: 80px;
-        line-height: 20px;
-        /* Optional card bottom border border-bottom: 1px solid #ddd; */
-        opacity: 0.45;
-        font-size: 13px;
-      }
-      section.active {
-        opacity: 1;
-      }
-      section:last-child {
-        border-bottom: none;
-        margin-bottom: 30vh;
-      }
-    }
-    /* Desktop (widescreen) Style */
-
-    @media all and (min-width: 620px) {
-      #map {
-        position: fixed;
-        right: 0px;
-        top: 0px;
-        width: 50%;
-      }
-      #features {
-        position: absolute;
-        left: 0px;
-        font-family: sans-serif;
-        overflow-y: scroll;
-        width: 50%;
-        background-color: #fafafa;
-      }
-
-      section {
-        padding: 25px 25px;
-        padding-top: 100px;
-        line-height: 25px;
-        /* Optional card bottom border border-bottom: 1px solid #ddd; */
-        opacity: 0.45;
-        font-size: 13px;
-      }
-      section.active {
-        opacity: 1;
-      }
-      section:last-child {
-        border-bottom: none;
-        margin-bottom: 80vh;
-      }
-    }
-  </style>
 
 
   <div id='map'>
@@ -186,6 +90,27 @@
       </nav>
     </div>
 
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <div class="content">
+          <h1 class="bold text-left">Meet Dory</h1>
+          <div class="col-md-4 col-md-offset-0 text-left text-left-xs col-sm-4">
+            <a href="img/IMG_0169-small.jpg" data-lightbox="true" data-title="gottaa get a better blue tang hero shot">
+              <img alt="Blue Tang Trade" src="img/IMG_0169-small.jpg" class="image-medium mb16">
+            </a>
+          </div>
+          <div class="col-md-7 col-sm-7">
+            <p>Dory (Paracanthurus hepatus) is a little fish with a big list of names: blue tang, royal blue tang, hippo tang, regal tang, and blue surgeonfish. While least commonly used, the last name is perhaps most fitting as Dory belongs to the surgeonfish
+              family, aptly named for her razor sharp tail spines. In some areas of the world, local fisherman call Dory letter six, as the number is seemingly spelled out in black markings on the side of her royal blue body. She is one of the most popular
+              fish in the aquarium trade today, with tens of thousands captured in the wild and imported into the United States every year. Follow Dory as she passes from net to hand to tank on her epic voyage from Reef to Aquarium.</p>
+            <a class="btn btn-lg btn-NG" href="#popup1">Explore the Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <section id='overview' class='active'>
       <h1 class="bold large">Reef to Aquarium</h1>
       <h4>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</h4>
@@ -197,8 +122,8 @@
 
     <section id='home-on-the-reef'>
       <h3 class="bold">Home on the Reef</h3>
-      <a href="img/IMG_0169-2.jpg" data-lightbox="true">
-          <img alt="Captive Blue Tang" src="img/IMG_0169-2.jpg" class="image-medium mb-s-16">
+      <a href="img/IMG_0169-small.jpg" data-lightbox="true">
+          <img alt="Captive Blue Tang" src="img/IMG_0169-small.jpg" class="image-medium mb-s-16"></img></img>
           </a>
       <p class="mb24"><br/>The brightly coloured coral gardens of the Indo-Pacific are where Dory’s journey from reef to aquarium begins. Unlike Nemo, Dory is largely caught in the wild. While she lives on reefs across the globe - from Hawaii to Japan - Indonesia and
         the Philippines are where most blue tangs are collected. Dory’s passage from coral reefs to home aquariums around the world creates a tremendous supply chain - one that has remained largely unknown, until now. Join us where we first meet Dory,
@@ -213,7 +138,7 @@
       <!--<h5>"The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore.”
             <br/>- Vincent Van Gogh</h5>-->
       <a href="img/IMG_3821.jpg" data-lightbox="true">
-            <img alt="Fisherman" src="img/IMG_3821.jpg" class="image-medium mb-s-16">
+            <img alt="Fisherman" src="img/IMG_3821.jpg" class="image-medium mb-s-16"></img></img>
           </a>
       <p class="mb24"><br/>Dory’s life begins on coral reefs, but her global journey doesn’t really start until her first contact with an aquarium fisherman, often called an ‘ornamental harvester’ or ‘collector’. Using handmade nets, snorkel masks and fins, collectors
         are experts at catching up to hundreds of fish per day. These fisherman reside in over 45 countries across the globe and are Dory’s first link into the global aquarium trade. Often, harvesters tend to be from lower socioeconomic classes, have
@@ -226,39 +151,43 @@
     <section id='middleman'>
       <h3 class="bold">Middleman</h3>
       <a href="img/IMG_0116.jpg" data-lightbox="true">
-            <img alt="Middleman" src="img/IMG_0116.jpg" class="image-medium mb-s-16">
-          </a>
+        <img alt="Middleman" src="img/IMG_0116.jpg" class="image-medium mb-s-16"></img>
+      </a>
       <p class="mb24"><br/>What happens after Dory is collected from her home? Harvesters hand over their fish to middlemen - the next step of Dory’s journey. In many communities, middlemen collect fish from between 7-20 harvesters. Often business savvy, the middlemen
         are the first indication of the global reach of the aquarium trade. Responsible for selling, rearing and transporting the fish for export, middleman juggle fish biology, community-relations, business and logistics.
         <br/>Meet Sarly, the middleman who works with the Sama-Bajau fishers in Toropot, Indonesia as he helps move fish from the waters of Indonesia to homes around the world.</p>
       <a class="btn btn-lg btn-NG" href=middleman.html>Meet Sarly, a Middleman</a>
     </section>
+
     <section id='exporter'>
       <h3 class="bold">Exporter</h3>
       <a href="img/IMG_3405.jpg" data-lightbox="true">
-            <img alt="Double C Exporters" src="img/IMG_3405.jpg" class="image-medium mb-s-16">
-          </a>
+        <img alt="Double C Exporters" src="img/IMG_3405.jpg" class="image-medium mb-s-16"></img>
+      </a>
       <p class="mb24"><br/>The aquarium trade is big business, a multi-billion dollar industry that links the most remote reefs and communities with densely populated cities around the globe. Demand for these remarkable, colourful creatures has been steadily rising since
         our world became globally connected by air in the 1970’s - making the rapid transport of live fish clear across the globe possible. Today, some 45 nations supply a staggering 2000 species of fish to countries around the world, though they mostly
         fill aquariums in the United States, Japan and Western Europe. To meet the demand for exotic salt-water (known as marine) fishes, a new profession was born: the ornamental fish exporter.
-        <br/>Meet Conrad Chen, one of the largest ornamental fish exporters in Indonesia, as we explore how the aquarium trade evolves from small-scale harvesting into big, global business.
-      </p>
+        <br/>Meet Conrad Chen, one of the largest ornamental fish exporters in Indonesia, as we explore how the aquarium trade evolves from small-scale harvesting into big, global business.</p>
       <a class="btn btn-lg btn-NG" href=exporter.html>Meet Conrad, an Exporter</a>
-
     </section>
+
     <section id='los-angeles'>
       <h3 class="bold">Los Angeles Import</h3>
+      <a href="img/caleb_kruse-3386.jpg" data-lightbox="true" data-title="gottaa get a better blue tang hero shot">
+        <img alt="Blue Tang Trade" src="img/caleb_kruse-3386.jpg" class="image-medium">
+      </a>
       <p class="mb24"><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non lorem in odio sollicitudin efficitur vitae cursus magna. Aliquam quis lorem eu nisl laoreet feugiat sit amet quis dui. Donec id elit a urna porta faucibus sit amet in nisl.
         Integer risus urna, euismod quis dapibus eget, facilisis vitae elit. Nullam vehicula, arcu ut molestie condimentum, nulla nisl lacinia metus, vitae lacinia nisi quam non magna. Pellentesque varius purus at libero sagittis sollicitudin.</p>
-
+      <a class="btn btn-lg btn-NG" href=exporter.html>Importer Placeholder</a>
     </section>
+
     <section id='colorado'>
       <h3 class="bold">Aquarists</h3>
       <a href="img/IMG_3148.jpg" data-lightbox="true">
-          <img alt="Colorado Aquarist" src="img/IMG_3148.jpg" class="image-medium mb-s-16">
-        </a>
+        <img alt="Colorado Aquarist" src="img/IMG_3148.jpg" class="image-medium mb-s-16"></img>
+      </a>
 
-      <p><br/>yadhadoihaepfohiadihf</p>
+      <p class="mb24"><br/>yadhadoihaepfohiadihf</p>
       <small id="citation">
             A <a href='www.nationalgeographic.com'>National Geographic</a> Project
         </small>
@@ -297,13 +226,6 @@
         bearing: 90,
         zoom: 10.5,
         pitch: 50,
-        speed: 0.7
-      },
-      'los-angeles': {
-        bearing: 0,
-        center: [-118.4085, 33.9416],
-        zoom: 10.5,
-        pitch: 40,
         speed: 0.7
       },
       'middleman': {
