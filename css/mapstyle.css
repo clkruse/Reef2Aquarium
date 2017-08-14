@@ -1,0 +1,80 @@
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+    /* Mobile Style */
+
+    @media all and (max-width: 620px) {
+      #map {
+        position: fixed;
+        height: 50%;
+      }
+      #features {
+        position: absolute;
+        bottom: 0px;
+        font-family: sans-serif;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        height: 50vh;
+        background-color: #fafafa;
+      }
+      section {
+        padding: 25px 25px;
+        padding-top: 80px;
+        line-height: 20px;
+        /* Optional card bottom border border-bottom: 1px solid #ddd; */
+        opacity: 0.45;
+        font-size: 13px;
+      }
+      section.active {
+        opacity: 1;
+      }
+      section:last-child {
+        border-bottom: none;
+        margin-bottom: 30vh;
+      }
+    }
+    /* Desktop (widescreen) Style */
+
+    @media all and (min-width: 620px) {
+      #map {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        width: 50%;
+      }
+      #features {
+        position: absolute;
+        left: 0px;
+        font-family: sans-serif;
+        overflow-y: scroll;
+        width: 50%;
+        background-color: #fafafa;
+      }
+
+      section {
+        padding: 25px 25px;
+        padding-top: 100px;
+        line-height: 25px;
+        /* Optional card bottom border border-bottom: 1px solid #ddd; */
+        opacity: 0.45;
+        font-size: 13px;
+      }
+      section.active {
+        opacity: 1;
+      }
+      section:last-child {
+        border-bottom: none;
+        margin-bottom: 80vh;
+      }
+    }
+
+</style>
