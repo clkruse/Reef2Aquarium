@@ -91,16 +91,12 @@
 @media screen and (max-width: 768px){
   .box{
     width: 70%;
-    z-index: 9;
     overflow: scroll;
-    position: fixed;
   }
   .overlay .popup{
     width: 70%;
     height:80%;
     left: 15%;
     overflow: scroll;
-    z-index: 10;
-    position: fixed;
   }
 }
