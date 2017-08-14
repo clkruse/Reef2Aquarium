@@ -98,5 +98,6 @@
     height:80%;
     left: 15%;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 }
