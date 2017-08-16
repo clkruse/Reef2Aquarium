@@ -57,10 +57,10 @@
   overflow: scroll;
 }
 
-.overlay:target:before {
+.overlay {
     display: none;
 }
-.overlay:before {
+.overlay:target {
   content:"";
   top: 0;
   left: 0;
@@ -71,7 +71,7 @@
   position: fixed;
   z-index: 9;
 }
-.overlay .popup {
+.overlay:target .popup {
   background: #fff;
   border-radius: 5px;
   width: 80%;
@@ -82,7 +82,7 @@
   z-index: 10;
   overflow: scroll;
 }
-.overlay:target .popup {
+.overlay .popup {
     top: -100%;
     left: -100%;
     overflow: scroll;
@@ -98,5 +98,6 @@
     height:80%;
     left: 15%;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 }

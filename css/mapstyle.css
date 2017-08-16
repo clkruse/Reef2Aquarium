@@ -46,7 +46,7 @@
 
     @media all and (min-width: 620px) {
       #map {
-        position: absolute;
+        position: fixed;
         right: 0px;
         top: 0px;
         width: 50%;
