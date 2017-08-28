@@ -129,7 +129,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
             var feature = hover[0];
 
             popup.setLngLat(feature.geometry.coordinates[0][0])
-                .setHTML(Math.floor(feature.properties.e) + ' ft')
+                .setHTML(Math.floor(feature.properties.e) + ' meters')
                 .addTo(map);
         });
 
