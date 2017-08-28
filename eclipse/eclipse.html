@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Eclipse Map</title>
+  <link rel='shortcut icon' href='img/favicon.ico?v=2'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://www.mapbox.com/base/latest/base.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css" rel="stylesheet" type="text/css" media="all" />
+  <script src='https://npmcdn.com/@turf/turf@3.5.1/turf.min.js'></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id='map'></div>
+  <section id='dashboard'>
+    <h3 class='space-bottom1'>The Catalina Eco Marathon</h3>
+    <div class='space-bottom1 bg col12 round'>
+      <div id='graph' class='col12 space-top1'>
+        <div id='playhead'></div>
+      </div>
+      <div id='stats' class='col12 pad1 small'>
+        <div class='row col12'>
+          <span>Elevation</span>
+          <span id='elevation'></span>
+        </div>
+        <div class='row col12'>
+          <span>Distance</span>
+          <span id='distance'></span>
+        </div>
+        <div class='row col12'>
+          <span>Time</span>
+          <span id='time'></span>
+        </div>
+        <div class='row col12'>
+          <p>Playback at 50x</p>
+        </div>
+      </div>
+    </div>
+    <div class='col12 pad2 bg round'>
+      <div class='clearfix'>
+        <div class='space-bottom2'>
+          <h2 class='micro'>Set camera view</h2>
+          <div class='short rounded-toggle clearfix'>
+            <input id='three' type='radio' name='rtoggle' checked='checked'>
+            <label for='three' class='col6'>Angled</label>
+            <input id='two' type='radio' name='rtoggle'>
+            <label for='two' class='col6'>Bird's-eye</label>
+          </div>
+        </div>
+        <div id='setpace' class='space-bottom2'>
+          <h2 class='micro'>Set running pace</h2>
+          <div class='flex'>
+            <a id='less' class='icon button short fill-darken1 minus col1'></a>
+            <div class='col10 center'>
+              <h3 id='pace' class='inline'></h3>
+              <span class='bold small'> min / mile</span>
+            </div>
+            <a id='more' class='icon button short fill-darken1 plus col1'></a>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <a id='play' class='button short round col12'>Start the race!</a>
+        <div class='dual col6'>
+          <a id='pause' class='fill-darken1 button short hidden col12 fl'>Pause</a>
+        </div>
+        <div class='dual col6'>
+          <a id='reset' class='fill-darken1 button short round hidden col12 fr'>Reset</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="eclipse.js"></script>
+</body>
+
+</html>

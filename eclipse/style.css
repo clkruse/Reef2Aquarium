@@ -1,0 +1,136 @@
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-top-right { filter: invert(); }
+    .mapboxgl-ctrl-attrib.mapboxgl-ctrl { background: rgba(30, 30, 35, 0.7); }
+    .mapboxgl-ctrl-attrib.mapboxgl-ctrl a { color: rgba(255, 255, 255, 0.8); }
+    #watermark { padding: 0 10px 20px 0; }
+
+    .bg { background: rgb(30, 30, 35); display: inline-block; }
+    .flex { display: flex; align-items: center; }
+    .dual:first-of-type { padding-right: 5px; }
+    .dual:last-of-type { padding-left: 5px; }
+
+    .mapboxgl-popup-anchor-top .mapboxgl-popup-tip { border-bottom-color: rgba(255, 255, 255, 0.8); }
+    .mapboxgl-popup-tip { border: 4px solid transparent; }
+    .mapboxgl-popup-content {
+        padding: 5px;
+        font: 700 12px 'Open Sans', sans-serif;
+        color: rgb(120, 110, 130);
+        background: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+    }
+
+    #map {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #dashboard {
+        position: absolute;
+        margin: 10px;
+        width: 300px;
+        color: white;
+    }
+
+    #graph {
+        position: relative;
+        height: 80px;
+        background: url('./profile.svg') 100% 100% no-repeat;
+    }
+
+    #playhead {
+        position: absolute;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.8);
+        width: 1px;
+        bottom: 0;
+        left: 0;
+    }
+
+    #play { background-color: rgb(120, 110, 130); }
+
+    #stats .row span:last-of-type { font-weight: 700; }
+    #stats .row span:first-of-type, #pace {
+        color: rgb(120, 110, 130);
+        margin-right: 2px;
+    }
+
+    #stats .row p {
+        color: rgb(120, 110, 130);
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 0.2px;
+        opacity: 0.4;
+    }
+
+    .rounded-toggle { background: rgba(0, 0, 0, 0.25); }
+    .rounded-toggle input[type=radio]:checked + label, .rounded-toggle .active {
+        background: rgb(120, 110, 130);
+        color: white;
+    }
+    .rounded-toggle > *, .rounded-toggle > *:hover {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+    }
+
+    @media only screen and (max-width: 640px) {
+
+        #dashboard {
+            margin: 0;
+            width: 100%;
+        }
+
+        #graph {
+            height: 40px;
+            margin-top: 5px;
+        }
+
+        .mapboxgl-ctrl-attrib.mapboxgl-ctrl { font-size: 8px; }
+        .flex { display: block; margin-top: 3px; }
+        .space-bottom1 { margin-bottom: 0; }
+        .col10 { max-width: 80px;] }
+        .small, #pace { font-size: 10px; }
+        #setpace { padding-right: 0; }
+
+        h3 { display: none; }
+        h2.micro, .pad2 { padding: 0; }
+        div.round { border-radius: 0; font-size: 10px; }
+        div.space-bottom2, .col6 {
+            padding: 0 10px;
+            width: 50%;
+            float: left;
+        }
+
+        #stats {
+            margin: 0;
+            width: 100%;
+            padding: 5px 10px;
+        }
+
+        #stats div.row.col12 span { display: inline-block; opacity: 0.8; }
+        #stats div.row.col12 {
+            font-size: 10px;
+            line-height: 1.5px;
+            max-width: 90px;
+            margin-right: 2px;
+            display: inline-block;
+        }
+
+        div.dual.col6:first-of-type { padding: 0 1px 0 0; }
+        div.dual.col6:last-of-type { padding: 0 0 0 1px; }
+
+        div.rounded-toggle.short label.col6 { padding: 0; font-weight: 500; }
+
+        .button#less, .button#more {
+            width: 30px;
+            height: 24px;
+            padding: 6px 0;
+        }
+
+        .icon:before {
+            font-size: 14px;
+            width: 14px;
+            height: 14px;
+        }
+
+    }
