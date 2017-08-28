@@ -65,12 +65,12 @@
     .rounded-toggle { background: rgba(0, 0, 0, 0.25); }
     .rounded-toggle input[type=radio]:checked + label, .rounded-toggle .active {
         background: rgb(120, 110, 130);
-        color: white;
+        color: rgb(120, 110, 130) !important;
     }
     .rounded-toggle > *, .rounded-toggle > *:hover {
         text-align: center;
         font-weight: 700;
-        color: white;
+        color: white !important;
     }
 
     @media only screen and (max-width: 640px) {
@@ -119,7 +119,7 @@
         div.dual.col6:first-of-type { padding: 0 1px 0 0; }
         div.dual.col6:last-of-type { padding: 0 0 0 1px; }
 
-        div.rounded-toggle.short label.col6 { padding: 0; font-weight: 500; }
+        div.rounded-toggle.short label.col6 { padding: 0; font-weight: 500; color: rgb(255,255,255) }
 
         .button#less, .button#more {
             width: 30px;

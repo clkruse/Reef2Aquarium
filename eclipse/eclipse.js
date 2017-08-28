@@ -138,12 +138,11 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
     // Reset race metrics to reflect the start of the race
 
     var elevationTxt = document.getElementById('elevation');
-    console.log(elevationTxt)
     var distanceTxt = document.getElementById('distance');
     var timeTxt = document.getElementById('time');
     var paceTxt = document.getElementById('pace');
 
-    var pace = paceTxt.textContent = 8;
+    var pace =  8;
 
     function resetMetrics() {
         elevationTxt.textContent = Math.floor(resp.features[0].properties.e) + ' meters';
@@ -249,7 +248,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
             var hrs = (Math.floor(totalTime / 60));
             var minutes = totalTime - (60 * hrs);
 
-            elevationTxt.textContent = Math.floor(resp.features[progress].properties.e) + ' ft';
+            elevationTxt.textContent = Math.floor(resp.features[progress].properties.e) + ' meters';
             distanceTxt.textContent = Math.floor(progress * .1) + ' miles';
             timeTxt.textContent = (minutes < 10) ? '0' + hrs + ':0' + minutes : '0' + hrs + ':' + minutes;
 
@@ -316,7 +315,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
 
     // Set pace in the dashboard
 
-    document.getElementById('less').addEventListener('click', function() {
+    /*document.getElementById('less').addEventListener('click', function() {
         if (pace > 1) {
             pace--;
             paceTxt.textContent = pace;
@@ -327,7 +326,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
             pace++;
             paceTxt.textContent = pace;
         };
-    });
+    });*/
 
     // Use pace to set animation speed; converted from min to millisec, accounting for polygon width, at 50x speed
 
@@ -372,7 +371,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
     var play = document.getElementById('play');
     var pause = document.getElementById('pause');
     var reset = document.getElementById('reset');
-    var setPace = document.getElementById('setpace');
+    //var setPace = document.getElementById('setpace');
 
     var animateInterval = null;
 
@@ -390,7 +389,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
 
     play.addEventListener('click', function() {
 
-        setPace.style.display = 'none';
+        //setPace.style.display = 'none';
         play.classList.add('hidden');
         pause.classList.remove('hidden');
         reset.classList.remove('hidden');
