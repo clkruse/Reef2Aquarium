@@ -8,10 +8,10 @@ var isMobile = window.innerWidth < 640 ? true : false;
 
 // Initialize camera variables
 
-var zoomOut = isMobile ? 11 : 11.4;
-var zoom = zoomIn = isMobile ? 11.4 : 12;
+var zoomOut = isMobile ? 6 : 11.4;
+var zoom = zoomIn = isMobile ? 6 : 12;
 var offset = isMobile ? [0, 50] : [0, 20];
-var center = centerDefault = [-118.41, 33.35];
+var center = centerDefault = [-104.98627	,	42.34486];
 var pitch = angled = 40;
 var birdsEye = 0;
 
@@ -44,7 +44,7 @@ var map = new mapboxgl.Map({
 
 // Load in geoJSON
 
-d3.json('balloon.geojson', function(err, resp) {
+d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/eclipse/balloon.geojson', function(err, resp) {
     if (err) throw err;
     map.on('load', function() {
 
