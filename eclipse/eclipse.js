@@ -8,8 +8,8 @@ var isMobile = window.innerWidth < 640 ? true : false;
 
 // Initialize camera variables
 
-var zoomOut = isMobile ? 6 : 11.4;
-var zoom = zoomIn = isMobile ? 6 : 12;
+var zoomOut = isMobile ? 2 : 2;
+var zoom = zoomIn = isMobile ? 2 : 2.4;
 var offset = isMobile ? [0, 50] : [0, 20];
 var center = centerDefault = [-104.98627	,	42.34486];
 var pitch = angled = 40;
