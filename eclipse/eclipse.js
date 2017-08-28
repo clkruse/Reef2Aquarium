@@ -8,7 +8,7 @@ var isMobile = window.innerWidth < 640 ? true : false;
 
 // Initialize camera variables
 
-var zoomOut = isMobile ? 2 : 2;
+var zoomOut = isMobile ? 2 : 2.4;
 var zoom = zoomIn = isMobile ? 2 : 2.4;
 var offset = isMobile ? [0, 50] : [0, 20];
 var center = centerDefault = [-104.98627	,	42.34486];
@@ -37,7 +37,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-v9',
     center: center,
-    minZoom: 11,
+    minZoom: 9,
     zoom: zoom,
     pitch: pitch
 });
@@ -329,7 +329,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
 
     // Use pace to set animation speed; converted from min to millisec, accounting for polygon width, at 50x speed
 
-    var animatePace = (pace * 6000 / 10) / 50;
+    var animatePace = (pace * 6000 / 10) / 200;
 
     // Toggle between angled and bird's eye view
 
