@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiZGFzdWxpdCIsImEiOiJjaXQzYmFjYmkwdWQ5MnBwZzEzZnNub2hhIn0.EDJ-lIfX2FnKhPw3nqHcqg';
+mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
 
 var course
 
@@ -10,7 +10,7 @@ var isMobile = window.innerWidth < 640 ? true : false;
 
 var zoomOut = isMobile ? 2 : 2.4;
 var zoom = zoomIn = isMobile ? 2 : 2.4;
-var offset = isMobile ? [0, 50] : [0, 20];
+var offset = isMobile ? [0, 150] : [0, 20];
 var center = centerDefault = [-104.98627	,	42.34486];
 var pitch = angled = 40;
 var birdsEye = 0;
@@ -29,15 +29,15 @@ var extrudedProperties = {
         'property': 'e',
         'type': 'identity'
     },
-    'fill-extrusion-color': 'yellow',
-    'fill-extrusion-opacity': 0.7
+    'fill-extrusion-color': '#911808',
+    'fill-extrusion-opacity': 0.8
 };
 
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-v9',
     center: center,
-    minZoom: 9,
+    minZoom: 9.5,
     zoom: zoom,
     pitch: pitch
 });
@@ -138,6 +138,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
     // Reset race metrics to reflect the start of the race
 
     var elevationTxt = document.getElementById('elevation');
+    console.log(elevationTxt)
     var distanceTxt = document.getElementById('distance');
     var timeTxt = document.getElementById('time');
     var paceTxt = document.getElementById('pace');
@@ -145,7 +146,7 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
     var pace = paceTxt.textContent = 8;
 
     function resetMetrics() {
-        elevationTxt.textContent = Math.floor(resp.features[0].properties.e) + ' ft';
+        elevationTxt.textContent = Math.floor(resp.features[0].properties.e) + ' meters';
         distanceTxt.textContent = '0 miles';
         timeTxt.textContent = '00:00';
     };
@@ -244,12 +245,12 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
 
             // Update dashboard metrics
 
-            var totalTime = Math.floor((progress * .01) * pace);
+            var totalTime = Math.floor((progress * .028) * pace);
             var hrs = (Math.floor(totalTime / 60));
             var minutes = totalTime - (60 * hrs);
 
             elevationTxt.textContent = Math.floor(resp.features[progress].properties.e) + ' ft';
-            distanceTxt.textContent = Math.floor(progress * .01) + ' miles';
+            distanceTxt.textContent = Math.floor(progress * .1) + ' miles';
             timeTxt.textContent = (minutes < 10) ? '0' + hrs + ':0' + minutes : '0' + hrs + ':' + minutes;
 
             playhead.style.left = progress / thirdThirdLimit * 100 + '%';
@@ -302,8 +303,9 @@ d3.json('https://raw.githubusercontent.com/clkruse/clkruse.github.io/master/ecli
 
             map.easeTo({
                 center: center,
-                bearing: bearing + 90,
-                duration: 500,
+                /*bearing: bearing + 90,*/
+                bearing: -45,
+                duration: 100,
                 offset: offset,
                 easing: function(t) { return t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t }
             });

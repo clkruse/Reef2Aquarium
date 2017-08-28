@@ -34,7 +34,7 @@
     #graph {
         position: relative;
         height: 80px;
-        background: url('./profile.svg') 100% 100% no-repeat;
+        background: url('./altitude.svg') 100% 100% no-repeat;
     }
 
     #playhead {
