@@ -3,7 +3,8 @@
 .nyt-header {
   /*border-bottom: 1px solid rgba(255,255,255,0.3);
   border-top: 1px solid rgba(255,255,255,0.3); */
-  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+  font-weight: 800 !important;
 }
 
 .text-shadow {
@@ -28,6 +29,13 @@
   margin-top:-9px;
 }
 
+.btn-NG {
+  height: 65px;
+  width: 300px;
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: bold;
+}
 .btn-NG:hover,
 .image-bg .btn:hover,
 .image-bg .btn:visited:hover {
