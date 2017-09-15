@@ -20,6 +20,7 @@
       #features {
         position: absolute;
         bottom: 0px;
+        z-index: -1;
         font-family: sans-serif;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
@@ -67,7 +68,7 @@
         line-height: 25px;
         /* Optional card bottom border border-bottom: 1px solid #ddd; */
         opacity: 0.45;
-        font-size: 13px;
+        font-size: 15px;
       }
       section.active {
         opacity: 1;

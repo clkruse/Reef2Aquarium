@@ -29,19 +29,39 @@
   margin-top:-9px;
 }
 
-.btn-NG {
+.btn-NG-lg {
   height: 65px;
   width: 300px;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 62px;
   font-weight: bold;
+  /*background: rgba(0, 0, 0, 0);*/
 }
+.btn-NG-lg:hover,
+.image-bg .btn:hover,
+.image-bg .btn:visited:hover {
+  background: #ffce00;
+  border-color: #ffce00;
+}
+
 .btn-NG:hover,
 .image-bg .btn:hover,
 .image-bg .btn:visited:hover {
   background: #ffce00;
   border-color: #ffce00;
 }
+
+.return-to-map li a{
+  font-size: 16px;
+  font-weight: 700;
+  opacity: .9;
+}
+
+.return-to-map {
+  background: #ffce00;
+  border-color: #ffce00;
+}
+
 .module.widget-handle-menu {
   padding: 0 16px;
   cursor: pointer;
@@ -103,7 +123,6 @@
   }
   .overlay .popup{
     width: 70%;
-    height:80%;
     left: 15%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;

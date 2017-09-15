@@ -1,1 +1,3 @@
-h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Roboto','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif; }
+h1,h2,h3,h4,h5,h6, { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+section p, section span{ font-family: 'Roboto','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif; }
