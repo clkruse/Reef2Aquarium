@@ -1300,7 +1300,7 @@ nav .cart-overview a {
 }
 @media all and (max-width: 990px) {
   nav.fixed {
-    position: absolute !important;
+    position: absolute;
     opacity: 1 !important;
     visibility: visible !important;
   }

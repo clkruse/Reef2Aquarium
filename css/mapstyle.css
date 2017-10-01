@@ -22,7 +22,6 @@
         bottom: 0px;
         z-index: -1;
         font-family: sans-serif;
-        overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         height: 50vh;
         background-color: #fafafa;
