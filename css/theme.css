@@ -4239,6 +4239,12 @@ video {
 .masonry-item {
   max-width: 100%;
 }
+@media all and (max-width: 767px) {
+  .masonry-item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .container .masonry-item {
   margin-bottom: 30px;
 }
