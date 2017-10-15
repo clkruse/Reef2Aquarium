@@ -51,7 +51,6 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #3d3d3d;
   overflow-x: hidden;
-  background-color: rgb(45, 45, 45);
 }
 body.boxed-layout {
   background: #eee;
