@@ -4269,9 +4269,9 @@ video {
   -moz-transform: translate3d(0, 0, 0);
 }
 .masonry-loader {
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
   opacity: 1;
   position: absolute;
   width: 100%;
