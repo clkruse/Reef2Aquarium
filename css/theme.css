@@ -3385,18 +3385,19 @@ img {
 }
 .logo-carousel li {
   text-align: center;
+  
 }
 .logo-carousel li {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .5;
+  opacity: .9;
 }
 .logo-carousel li:hover {
   opacity: 1;
 }
 .logo-carousel img {
-  max-height: 60px;
+  min-height: 100%;
 }
 @media all and (max-width: 767px) {
   .logo-carousel .slides li {
@@ -4632,9 +4633,9 @@ video {
   color: #fefefe;
 }
 .project {
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+  transition: all 0.05s ease;
+  -webkit-transition: all 0.05s ease;
+  -moz-transition: all 0.05s ease;
   opacity: 1;
   padding: 0;
 }
@@ -4643,14 +4644,16 @@ video {
 }
 .project.inactive {
   pointer-events: none !important;
-  display: none;
+  position: absolute !important;
+   top: -9999px !important;
+   left: -9999px!important;
 }
 .project .image-tile {
   margin: 0;
 }
 .project.inactive:hover .title,
 .project.inactive .image-tile:hover:before {
-  display: none;
+  display: none !important;
 }
 @media all and (max-width: 868px) {
   .filters.floating {
