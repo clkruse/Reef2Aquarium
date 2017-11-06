@@ -1392,10 +1392,10 @@ nav .cart-overview a {
   .mega-menu li {
     width: 100% !important;
   }
-  .toggle-sub > ul,
+  /*.toggle-sub > ul,
   .toggle-sub .mega-menu ul {
     display: block !important;
-  }
+  }*/
   .module.widget-handle {
     border-left: none;
     /*border-top: 1px solid #ccc;*/
