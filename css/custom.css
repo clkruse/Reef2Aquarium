@@ -85,7 +85,7 @@
   overflow: scroll;
 }
 
-.overlay {
+.overlay-popup {
     display: none;
 }
 .overlay:target {

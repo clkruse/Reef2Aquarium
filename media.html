@@ -16,6 +16,61 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
   <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
+  <style>
+      html, body, .container {
+    width: 100%;
+    height: 100%;
+    }
+
+    .container {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .child {
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+
+    .child1 {
+    background-image: url(img/media/Bali1_SSS.jpg);
+    }
+
+    .child2 {
+    background-image: url(img/media/BaliBlueTangFarm4.jpg);
+    }
+
+    .child3 {
+    background-image: url(img/media/BaliLes1_CK_0116.jpg);
+    }
+    .text1 {
+    position: absolute;
+    margin: auto;
+    top: 13%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+    .text2 {
+    position: absolute;
+    margin: auto;
+    top: 47%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+    .text3 {
+    position: absolute;
+    margin: auto;
+    top: 81%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+
+  </style>
 </head>
 
 <body style=background-color: rgb(45, 45, 45);>
@@ -91,16 +146,16 @@
   </div>
 
 
-  <div class="main-container">
-
-    <section class="cover media-thirds">
-        <a href="media-reefs.html"><img class="" src="img/media/Bali1_SSS.jpg"></a>
-        <a href="media-reefs.html"><h1 class="bold media-thirds-one">PHOTOS</h1></a>
-        <a href="media-video.html"><img src="img/media/BaliBlueTangFarm4.jpg"></a>
-        <a href="media-video.html"><h1 class="bold media-thirds-two">VIDEOS</h1></a>
-        <a href="media-spherical.html"><img src="img/media/BaliLes1_CK_0116.jpg"></a>
-        <a href="media-spherical.html"><h1 class="bold media-thirds-three">VIRTUAL REALITY</h1></a>
-    </section>
+  <div class="container cover">
+    <div class="child child1">
+      <a href="media-reefs.html"><h1 class="bold text1 text-center">PHOTOS</h1></a>
+    </div>
+    <div class="child child2">
+      <a href="media-video.html"><h1 class="bold text2 text-center">VIDEO</h1></a>
+    </div>
+    <div class="child child3">
+      <a href="media-spherical.html"><h1 class="bold text3 text-center">VIRTUAL REALITY</h1></a>
+    </div>
   </div>
 
   <script src="js/jquery.min.js"></script>
