@@ -3391,10 +3391,10 @@ img {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .9;
+  opacity: 1;
 }
 .logo-carousel li:hover {
-  opacity: 1;
+  opacity: .8;
 }
 .logo-carousel img {
   min-height: 100%;
