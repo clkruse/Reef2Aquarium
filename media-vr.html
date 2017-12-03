@@ -20,10 +20,12 @@
 </head>
 
 <body style=background-color: rgb(45, 45, 45);>
+<iframe style="position: absolute; width: 100%; height: 100%; border: none" src="https://www.youtube.com/embed/78NbWX_92Xo" frameborder="0" allowfullscreen></iframe>
+          <!--<div id="vrview"></div>-->
+          <!--<iframe style="position: absolute; width: 100%; height: 100%; border: none" allowfullscreen="true" scrolling="no" src="https://storage.googleapis.com/vrview/2.0/index.html?video=https://storage.googleapis.com/vrview/2.0/examples/video/congo_2048.mp4&amp;is_stereo=true&amp;" style="border: 0px;"></iframe>-->
 
-          <div id="vrview">
-          <iframe style="position: absolute; width: 100%; height: 100%; border: none" allowfullscreen="true" scrolling="no" src="https://storage.googleapis.com/vrview/2.0/index.html?video=https://storage.googleapis.com/vrview/2.0/examples/video/congo_2048.mp4&amp;is_stereo=true&amp;" style="border: 0px;"></iframe>
-        </div>
+
+
 
           <script src="js/jquery.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
@@ -32,7 +34,16 @@
           <script src="js/parallax.js"></script>
           <script src="js/scripts.js"></script>
           <script src="js/vrview.min.js"></script>
-
+          <script>
+            window.addEventListener('load', onVrViewLoad)
+            function onVrViewLoad() {
+              var vrView = new VRView.Player('#vrview', {
+                video: '/Users/ckruse/Downloads/vrview-gh-pages/examples/video/congo_2048.mp4',
+                is_stereo: true,
+                width: '100%'
+              });
+            }
+          </script>
           <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
