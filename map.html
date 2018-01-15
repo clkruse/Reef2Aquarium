@@ -68,8 +68,8 @@
       <div class="content">
         <h1 class="bold text-left">Meet Dory</h1>
         <div class="col-md-6 col-md-offset-0 text-left text-left-xs col-sm-6" >
-          <a href="img/IMG_0169-small.jpg" data-lightbox="true" data-title="gottaa get a better blue tang hero shot">
-            <img alt="Blue Tang" src="img/IMG_0169-small.jpg" class="image-medium mb16">
+          <a href="img/media/tang-header.jpg" data-lightbox="true" data-title="">
+            <img alt="Blue Tang" src="img/media/tang-header.jpg" class="image-medium mb16">
           </a>
         </div>
         <div class="col-md-6 col-sm-6">
@@ -89,19 +89,14 @@
   </div>
   <div id='features'>
 
-
-
-
-
-
-    <section id='overview' class='active'>
-      <h1 class="bold large">Reef to Aquarium</h1>
+    <section id='overview' class='active' style="padding-top: 0px !important"></section>
+    <!--<h1 class="bold large">Reef to Aquarium</h1>
       <!--<h4>The journey of a blue tang from a small reef in Indonesia, to an aquarist in the mountains of Colorado</h4>
       <p>The blue tang is one of the most popular fish in the aquarium trade. As the star species in the film Finding Dory, these fish are in greater demand than ever. Unfortunately, the blue tang cannot be captively bred. This creates a global supply chain
         that connects fishermen in small Pacific islands with hobby aquarists on the other side of the world. This is the story of how a Blue Tang travels around the world.</p>
       </br>
-    </br>-->
-    </section>
+    </br>
+    </section>-->
 
     <section id='home-on-the-reef' class='active'>
       <h3 class="bold">Home on the Reef</h3>
@@ -264,7 +259,6 @@
         var chapterName = chapterNames[i];
         if (isElementOnScreenMobile(chapterName)) {
           setActiveChapter(chapterName);
-
           break;
         }
       }
@@ -291,6 +285,7 @@
       var element = document.getElementById(id);
       var bounds = element.getBoundingClientRect();
       return bounds.top < window.innerHeight && bounds.bottom > (screen.height / 2.2);
+
     }
   </script>
 
