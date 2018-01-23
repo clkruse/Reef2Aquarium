@@ -4843,6 +4843,30 @@ section + .portfolio-pullup {
   -webkit-transform: translateX(-50%) translateY(-50%);
   z-index: -1;
 }
+.foundry_modal.video {
+  overflow-y: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding: 80px 48px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
 .foundry_modal.no-bg {
   background: none;
   box-shadow: none !important;
