@@ -3689,6 +3689,9 @@ img {
     height: auto;
     padding: 80px 0;
   }
+  .cover.fullscreen.video {
+    padding: 80px 0;
+  }
   .cover.fullscreen.image-slider {
     padding: 0;
   }
@@ -3996,7 +3999,7 @@ video {
   .play-button.large {
     width: 90px;
     height: 90px;
-    margin-top: -45px;
+    margin-top: 0px;
   }
   .play-button.large:before {
     margin-top: -14px;
@@ -4850,7 +4853,7 @@ section + .portfolio-pullup {
   width: 100%;
   height: 100%;
   position: fixed;
-  padding: 80px 48px;
+  /*padding: 80px 48px;*/
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -4907,6 +4910,11 @@ section + .portfolio-pullup {
 .foundry_modal *:not(.background-image-holder):not(.close-modal) {
   z-index: 4;
   position: relative;
+  position: relative;
+  transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  top: 50%;
+  z-index: 2;
 }
 .foundry_modal.image-bg .close-modal,
 .foundry_modal.no-bg .close-modal {
