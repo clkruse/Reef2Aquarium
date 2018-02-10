@@ -414,6 +414,7 @@ h6.uppercase,
 p,
 span {
   font-weight: 500;
+  font-size: 14px;
 }
 p.lead {
   font-size: 16px;
@@ -431,7 +432,7 @@ p.lead {
     line-height: 24px;
   }
   p {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 a,
@@ -3297,6 +3298,12 @@ img {
   height: 70vh;
   min-height: 600px;
 }
+
+.image-slider.height-100 .slides li {
+  height: 100vh;
+  min-height: 600px;
+}
+
 @media all and (max-width: 767px) {
   .image-slider.height-70 .slides li {
     height: auto;
