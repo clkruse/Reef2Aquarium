@@ -35,20 +35,23 @@
   font-size: 20px;
   line-height: 62px;
   font-weight: bold;
+  background: #ffce00;
+  border-color: #ffce00!important;
+  color: black!important;
   /*background: rgba(0, 0, 0, 0);*/
 }
 .btn-NG-lg:hover,
 .image-bg .btn:hover,
 .image-bg .btn:visited:hover {
   background: #ffce00;
-  border-color: #ffce00;
+  border-color: #000000 !important;
 }
 
 .btn-NG:hover,
 .image-bg .btn:hover,
 .image-bg .btn:visited:hover {
   background: #ffce00;
-  border-color: #ffce00;
+  border-color: #000000 !important;
 }
 
 .return-to-map li a{
@@ -464,5 +467,27 @@ nav.nav-centered-media .module.widget-handle {
     z-index: 2;
     text-align: center;
     padding: 0;
+  }
+}
+
+.nav-button {
+  color:black;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+@media all and (max-width: 768px) {
+  .nav-button {
+    color:black;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 15px;
+    float: left;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .mobile-break {
+    display: none
   }
 }
