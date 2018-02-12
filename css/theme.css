@@ -969,6 +969,7 @@ nav.bg-dark .logo-dark {
   -moz-transition: all 0.3s ease;
   max-width: 100%;
   white-space: normal;
+  padding-left: 10px;
 }
 .menu li a:hover {
   opacity: 1 !important;
