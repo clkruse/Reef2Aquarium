@@ -27,6 +27,8 @@
 .h1mod {
   font-size: 4.3vw;
   margin-top:-9px;
+  direction: rtl;
+  line-height: 100%;
 }
 
 .btn-NG-lg {
