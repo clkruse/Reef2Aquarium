@@ -470,19 +470,21 @@ nav.nav-centered-media .module.widget-handle {
   }
 }
 
-.nav-button {
+.nav-button-r {
   color:black;
-  padding-left:20px;
-  padding-right:20px;
+  width: 4.2%;
+  padding-left:15px;
 }
 
-@media all and (max-width: 768px) {
-  .nav-button {
-    color:black;
-    padding-left:10px;
-    padding-right:10px;
-    padding-top: 15px;
-    float: left;
+.nav-button-l {
+  color:black;
+  width: 4.2%;
+  padding-right:15px;
+}
+
+@media all and (max-width: 900px) {
+  .nav-button-l, .nav-button-r {
+    display: none;
   }
 }
 
