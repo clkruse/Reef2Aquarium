@@ -94,9 +94,21 @@
       </div>
     </section>
 
+    <section>
+      <div class="modal-container v-align-transform text-center" style="position: absolute; width: 100%" id="button">
+        <div class="play-button inline large"></div>
+      </div>
+      <div class="inlineVideo">
+        <div class="videoContainer">
+          <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/Gq-_ZtTT764?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <img id="pic" class="image-bg " src="img/media/Denpasar5_SSS.jpg">
+    </section>
+
 
     <!-- Full screen image -->
-    <section class="cover fullscreen mb24">
+    <!--<section class="cover fullscreen mb24">
       <ul class="slides">
         <li class="">
           <div class="background-image-holder ">
@@ -114,7 +126,7 @@
         </li>
       </ul>
 
-    </section>
+    </section>-->
 
     <!-- Basic Text -->
     <section>
@@ -256,6 +268,33 @@
   <script src="js/lightbox.min.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/scripts.js"></script>
+  <script>
+    var player = document.getElementById('video');
+    $('#button').click(function() {
+      $(this).hide();
+      $('#pic').hide();
+      $('#video').css('visibility', 'visible').animate({
+        opacity: 1
+      }, 2000);
+      $('.inlineVideo').css('display', 'block').animate({
+        opacity: 1
+      }, 2000);
+      $("#video")[0].src += "&autoplay=1";
+      ev.preventDefault();
+    });
+    $('#pic').click(function() {
+      $(this).hide();
+      $('#button').hide();
+      $('#video').css('visibility', 'visible').animate({
+        opacity: 1
+      }, 2000);
+      $('.inlineVideo').css('display', 'block').animate({
+        opacity: 1
+      }, 2000);
+      $("#video")[0].src += "&autoplay=1";
+      ev.preventDefault();
+    });
+  </script>
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
