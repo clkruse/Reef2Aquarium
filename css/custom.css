@@ -505,6 +505,12 @@ nav.nav-centered-media .module.widget-handle {
   }
 }
 
+@media all and (max-width: 768px) {
+  .mobile-hide {
+    display: none
+  }
+}
+
 .videoContainer {
   visibility:hidden;
   position: absolute;
