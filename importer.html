@@ -29,7 +29,7 @@
         <div class="module widget-handle right return-to-map">
           <ul class="bold menu">
             <li>
-              <a href="map.html#exporter">Return to Map</a>
+              <a href="map.html#los-angeles">Return to Map</a>
             </li>
           </ul>
         </div>
@@ -246,18 +246,20 @@
 
     <!-- Map Footer -->
     <section class="p0">
-      <div id='map' style='width: 100%; height: 300px;'></div>
-      <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
-        var map = new mapboxgl.Map({
-          container: 'map',
-          center: [115.191379, -8.777208],
-          zoom: 10.3,
-          style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
-          hash: false,
-          interactive: false
-        });
-      </script>
+      <a href="map.html#los-angeles">
+        <div id='map' style='width: 100%; height: 300px;'></div>
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
+          var map = new mapboxgl.Map({
+            container: 'map',
+            center: [-118.4085, 33.9416],
+            zoom: 6,
+            style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
+            hash: false,
+            interactive: false
+          });
+        </script>
+      </a>
     </section>
 
     <!-- Page Footer -->
