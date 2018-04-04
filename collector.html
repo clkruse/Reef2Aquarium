@@ -498,7 +498,15 @@
     <section class="p0">
       <a href="map.html#collectors">
         <div id='map2' style='width: 100%; height: 300px;'></div>
+        <a href="http://mapbox.com/about/maps" class='mapbox-wordmark' target="_blank">Mapbox</a>
+        <div class="mapbox-attribution-container">
+          <a href="https://www.mapbox.com/about/maps/">© Mapbox | </a>
+          <a href="http://www.openstreetmap.org/copyright">© OpenStreetMap | </a>
+          <a href="https://www.mapbox.com/map-feedback/" target="_blank"><strong>Improve this map</strong></a>
+        </div>
+
       </a>
+
     </section>
 
     <!-- Page Footer -->
@@ -572,8 +580,7 @@
       zoom: 5.5,
       style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
       hash: false,
-      attributionControl: true,
-      logoPosition: 'bottom-right',
+      attributionControl: false,
       interactive: false
     });
     var map = new mapboxgl.Map({
@@ -583,8 +590,7 @@
       pitch: 0,
       style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
       hash: false,
-      attributionControl: true,
-      logoPosition: 'bottom-right',
+      attributionControl: false,
       interactive: false
     });
   </script>

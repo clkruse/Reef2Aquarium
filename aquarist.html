@@ -256,19 +256,12 @@
     <section class="p0">
       <a href="map.html#colorado">
         <div id='map' style='width: 100%; height: 300px;'></div>
-        <script>
-          mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
-          var map = new mapboxgl.Map({
-            container: 'map',
-            center: [-104.65, 39.04],
-            zoom: 8,
-            style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
-            hash: false,
-            attributionControl: true,
-            logoPosition: 'bottom-right',
-            interactive: false
-          });
-        </script>
+        <a href="http://mapbox.com/about/maps" class='mapbox-wordmark' target="_blank">Mapbox</a>
+        <div class="mapbox-attribution-container">
+          <a href="https://www.mapbox.com/about/maps/">© Mapbox | </a>
+          <a href="http://www.openstreetmap.org/copyright">© OpenStreetMap | </a>
+          <a href="https://www.mapbox.com/map-feedback/" target="_blank"><strong>Improve this map</strong></a>
+        </div>
       </a>
     </section>
 
@@ -307,6 +300,18 @@
   <script src="js/lightbox.min.js "></script>
   <script src="js/parallax.js "></script>
   <script src="js/scripts.js "></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2xrcnVzZSIsImEiOiJjaXIxY2M2dGcwMnNiZnZtZzN0Znk3MXRuIn0.MyKHSjxjG-ZcI2BkRUSGJA';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      center: [-104.65, 39.04],
+      zoom: 8,
+      style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
+      hash: false,
+      attributionControl: false,
+      interactive: false
+    });
+  </script>
 </body>
 
 </html>

@@ -17,6 +17,9 @@
         position: fixed;
         height: 50%;
       }
+      .mapboxgl-canvas {
+        height: 95%!important;
+      }
       #features {
         position: absolute;
         bottom: 0px;
