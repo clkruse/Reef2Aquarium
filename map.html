@@ -17,7 +17,7 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
   <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.0/mapbox-gl.js'></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="js/scrollbar.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -241,7 +241,11 @@
       zoom: 0,
       center: [183, 40],
       style: 'mapbox://styles/clkruse/cizu3laf000a22spid4gcxazp',
-      hash: false
+      hash: false,
+      attributionControl: true,
+      logoPosition: 'bottom-right',
+      attributionControl: true,
+      logoPosition: 'bottom-right'
     });
 
     var chapters = {

@@ -614,3 +614,23 @@ nav.nav-centered-media .module.widget-handle {
       padding-bottom: 10px;
   }
 }
+
+.mapboxgl-control-container {
+  bottom: 0;
+  right: 0;
+  float: left;
+  position: absolute;
+  display: block;
+  margin: 0% 1%;
+  font-size: 11px;
+}
+
+.mapboxgl-ctrl-logo {
+  bottom: 100px;
+  right: 0;
+  float: right;
+  position: absolute;
+  display: block;
+  margin: 0% 1%;
+  font-size: 11px;
+}
